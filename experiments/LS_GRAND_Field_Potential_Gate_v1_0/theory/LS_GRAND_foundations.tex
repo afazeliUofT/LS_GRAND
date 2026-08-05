@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,mathtools,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\title{Latent-State GRAND: Minimal Exact Foundations and Early Kill Criteria}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Finite latent-state model}
+Let $\mathcal C\subseteq\{0,1\}^n$ be a membership-testable code and let
+$\mathcal S$ be a finite set of latent hypotheses with priors $\pi_s$.  For each
+$s$, enumerate all binary words $x_{s,j}$ in non-increasing order of
+$w_{s,j}=\pi_s p(y\mid x_{s,j},s)$.  The enumeration is injective for fixed $s$.
+
+\section{Fiber likelihood}
+For $c\in\mathcal C$, define
+$\mathcal F(c)=\{(s,j):x_{s,j}=c\}$.  With a uniform codeword prior,
+\begin{equation}
+\Lambda(c)=\sum_{(s,j)\in\mathcal F(c)}w_{s,j}
+          =\sum_{s\in\mathcal S}\pi_s p(y\mid c,s).
+\end{equation}
+Thus first-hit and max-witness rules need not equal marginal maximum likelihood.
+
+\section{Exact finite-queue certificate}
+After revealing a prefix of each queue, define
+\begin{equation}
+ A(c)=\sum_{(s,j)\text{ revealed}:x_{s,j}=c}w_{s,j}.
+\end{equation}
+Let $h_s$ denote the next unseen weight in queue $s$, with $h_s=0$ if exhausted,
+and define
+\begin{equation}
+ B(c)=\sum_{s:c\text{ not revealed in }s}h_s,
+ \qquad B_0=\sum_s h_s.
+\end{equation}
+\begin{theorem}[Exact stopping]
+If a revealed codeword $c^\star$ satisfies
+\begin{equation}
+ A(c^\star)>
+ \max\left\{B_0,\max_{c\ne c^\star,\,c\text{ revealed}}[A(c)+B(c)]\right\},
+\end{equation}
+then $c^\star$ is the unique marginal-ML codeword.
+\end{theorem}
+\begin{proof}
+For every revealed rival, injectivity and queue monotonicity imply
+$\Lambda(c)\le A(c)+B(c)$.  For every never-revealed rival,
+$\Lambda(c)\le B_0$.  Also $A(c^\star)\le\Lambda(c^\star)$.  The strict
+inequality therefore separates $c^\star$ from every rival.
+\end{proof}
+
+\begin{remark}[Outer-state completeness]
+The theorem is exact only when all nonzero-prior state hypotheses have queues, or
+when unopened states are covered by an additional admissible tail bound.  An
+unbounded or beam-truncated hidden-state model without such a bound is not
+certified exact.
+\end{remark}
+
+\section{Quarter-cycle rank separation}
+For Gray QPSK with $N=n/2$ symbols, a persistent $90^\circ$ slip after symbol
+$\tau$ changes one label bit in each subsequent symbol in the noiseless limit.
+Hence $d_H=N-\tau$.  A Hamming-weight order has rank at least
+\begin{equation}
+ \sum_{i=0}^{d_H-1}\binom{n}{i},
+\end{equation}
+whereas an at-most-one-slip family contains $1+3(N-1)$ trajectories.  This is a
+structural coordinate separation, not an end-to-end complexity result, because
+certificate cost and matched state-aware baselines remain to be evaluated.
+
+\section{Early kill criteria}
+The exact-efficiency claim should be abandoned or pivoted if (i) the finite-queue
+certificate routinely consumes most queues; (ii) marginally rescored latent OSD
+matches or beats LS-GRAND after all operations are counted; or (iii) affine
+code-orbit collisions create a material ambiguity floor in the claimed target
+regime.
+\end{document}

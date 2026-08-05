@@ -1,0 +1,12 @@
+{
+  "wrapper_version": "1.0.0",
+  "package_filename": "LS_GRAND_Field_Potential_Gate_v1_0.zip",
+  "package_sha256": "07ef756cd4744b165a8c63508cc429ed41f4bf12441043268213825fb27ce0fe",
+  "package_source": "/mnt/c/Users/alifa/Downloads/LS_GRAND_Field_Potential_Gate_v1_0.zip",
+  "profile": "gate",
+  "run_name": "LS_GRAND_Field_Potential_Gate_gate_20260805T124843Z",
+  "repository": "afazeliUofT/LS_GRAND",
+  "wrapper_log": "results/_wrapper_logs/wrapper_20260805T124843Z.log",
+  "unit_test_log": "results/_wrapper_logs/unit_tests_20260805T124843Z.log",
+  "completed_utc": "20260805T131119Z"
+}

@@ -1,0 +1,294 @@
+{
+  "claim_warning": "This is an early evidence gate, not proof that future work will be field-defining.",
+  "gate_pass_map": {
+    "G0_EXACTNESS": true,
+    "G1_FIBER_EFFECT": false,
+    "G2_MATCHED_SCALING_ADVANTAGE": true,
+    "G3_CERTIFICATE_USEFULNESS": false,
+    "G4_IDENTIFIABILITY_AND_ROBUSTNESS": false,
+    "G5_REPRODUCIBILITY": true
+  },
+  "gates": [
+    {
+      "certificate_failures": 0,
+      "direct_failures": 0,
+      "exact_mismatches": 0,
+      "gate": "G0_EXACTNESS",
+      "nontied_trials": 120,
+      "pass": true,
+      "unit_tests_passed": true,
+      "zero_mismatch_95pct_upper": 0.024655401055656334
+    },
+    {
+      "first_errors": 55,
+      "gate": "G1_FIBER_EFFECT",
+      "joint_errors": 53,
+      "marginal_errors": 57,
+      "marginal_first_disagreements": 13,
+      "marginal_joint_disagreements": 14,
+      "pass": false
+    },
+    {
+      "details": [
+        {
+          "config_id": "P128_DENSE_EARLY",
+          "eligible_pairs": 20,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "dense",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 109.60548416323556,
+          "qualifies": true,
+          "ratio_ci_high": 272.5288516984309,
+          "ratio_ci_low": 67.97901785714285
+        },
+        {
+          "config_id": "P128_SPARSE_EARLY",
+          "eligible_pairs": 20,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "sparse",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 107.74140565317036,
+          "qualifies": true,
+          "ratio_ci_high": 208.94090711805558,
+          "ratio_ci_low": 77.06991792929293
+        },
+        {
+          "config_id": "P32_DENSE_EARLY",
+          "eligible_pairs": 40,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "dense",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 230.68359375,
+          "qualifies": true,
+          "ratio_ci_high": 251.1484375,
+          "ratio_ci_low": 160.97395833333331
+        },
+        {
+          "config_id": "P32_SPARSE_EARLY",
+          "eligible_pairs": 40,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "sparse",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 265.1965356691919,
+          "qualifies": true,
+          "ratio_ci_high": 407.1171875,
+          "ratio_ci_low": 224.62890625
+        },
+        {
+          "config_id": "P64_DENSE_EARLY",
+          "eligible_pairs": 39,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "dense",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 79.05549568965517,
+          "qualifies": true,
+          "ratio_ci_high": 108.19176136363636,
+          "ratio_ci_low": 41.16477272727273
+        },
+        {
+          "config_id": "P64_DENSE_MIX",
+          "eligible_pairs": 40,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "dense",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 123.12157734791296,
+          "qualifies": true,
+          "ratio_ci_high": 236.43207908163265,
+          "ratio_ci_low": 68.00625
+        },
+        {
+          "config_id": "P64_SPARSE_EARLY",
+          "eligible_pairs": 38,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "family": "sparse",
+          "ls_minus_osd_error_rate": 0.0,
+          "osd_to_ls_state_eval_median_ratio": 83.37357954545455,
+          "qualifies": true,
+          "ratio_ci_high": 144.9984375,
+          "ratio_ci_low": 42.83809722864386
+        },
+        {
+          "config_id": "P64_SPARSE_LATE",
+          "eligible_pairs": 34,
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": -0.075,
+          "family": "sparse",
+          "ls_minus_osd_error_rate": -0.025,
+          "osd_to_ls_state_eval_median_ratio": 15.145609553697321,
+          "qualifies": true,
+          "ratio_ci_high": 33.36741727941177,
+          "ratio_ci_low": 8.1070955759295
+        }
+      ],
+      "gate": "G2_MATCHED_SCALING_ADVANTAGE",
+      "pass": true,
+      "qualifying_configs": 8,
+      "qualifying_families": [
+        "dense",
+        "sparse"
+      ]
+    },
+    {
+      "details": [
+        {
+          "cap_rate": 0.0,
+          "certification_rate": 1.0,
+          "config_id": "P128_DENSE_EARLY",
+          "median_certificate_query_overhead": 18.052720650952466,
+          "median_membership_queries": 4896.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 47.7221052631579,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 20
+        },
+        {
+          "cap_rate": 0.0,
+          "certification_rate": 1.0,
+          "config_id": "P128_SPARSE_EARLY",
+          "median_certificate_query_overhead": 43.07080745341615,
+          "median_membership_queries": 4640.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 119.5766136241732,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 20
+        },
+        {
+          "cap_rate": 0.0,
+          "certification_rate": 1.0,
+          "config_id": "P32_DENSE_EARLY",
+          "median_certificate_query_overhead": 9.536231884057973,
+          "median_membership_queries": 128.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 25.46471544715448,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 40
+        },
+        {
+          "cap_rate": 0.0,
+          "certification_rate": 1.0,
+          "config_id": "P32_SPARSE_EARLY",
+          "median_certificate_query_overhead": 10.666666666666666,
+          "median_membership_queries": 108.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 25.64786324786327,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 40
+        },
+        {
+          "cap_rate": 0.025,
+          "certification_rate": 0.975,
+          "config_id": "P64_DENSE_EARLY",
+          "median_certificate_query_overhead": 34.32867034053977,
+          "median_membership_queries": 1888.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 162.3843649373886,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 40
+        },
+        {
+          "cap_rate": 0.0,
+          "certification_rate": 1.0,
+          "config_id": "P64_DENSE_MIX",
+          "median_certificate_query_overhead": 37.24631268436578,
+          "median_membership_queries": 1216.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 189.70316301703164,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 40
+        },
+        {
+          "cap_rate": 0.05,
+          "certification_rate": 0.95,
+          "config_id": "P64_SPARSE_EARLY",
+          "median_certificate_query_overhead": 34.0,
+          "median_membership_queries": 2176.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 333.7428842504745,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 40
+        },
+        {
+          "cap_rate": 0.15,
+          "certification_rate": 0.85,
+          "config_id": "P64_SPARSE_LATE",
+          "median_certificate_query_overhead": 64.09271054493985,
+          "median_membership_queries": 13856.0,
+          "median_queue_touch_fraction": 1.0,
+          "p90_certificate_query_overhead": 565.9464314354451,
+          "p90_queue_touch_fraction": 1.0,
+          "qualifies": false,
+          "trials": 40
+        }
+      ],
+      "gate": "G3_CERTIFICATE_USEFULNESS",
+      "pass": false
+    },
+    {
+      "details": [
+        {
+          "certification_rate": 1.0,
+          "config_id": "M32_DENSE_PRIOR_LOW",
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "ls_minus_osd_error_rate": 0.0,
+          "paired_trials": 36,
+          "qualifies": true
+        },
+        {
+          "certification_rate": 1.0,
+          "config_id": "M32_SPARSE_PRIOR_HIGH",
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "ls_minus_osd_error_rate": 0.0,
+          "paired_trials": 36,
+          "qualifies": true
+        },
+        {
+          "certification_rate": 0.9166666666666666,
+          "config_id": "M64_DENSE_NOISE",
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "ls_minus_osd_error_rate": 0.0,
+          "paired_trials": 36,
+          "qualifies": true
+        },
+        {
+          "certification_rate": 0.9722222222222222,
+          "config_id": "M64_SPARSE_TWO_SLIP",
+          "error_diff_ci_high": 0.0,
+          "error_diff_ci_low": 0.0,
+          "ls_minus_osd_error_rate": 0.0,
+          "paired_trials": 36,
+          "qualifies": true
+        }
+      ],
+      "gate": "G4_IDENTIFIABILITY_AND_ROBUSTNESS",
+      "max_mean_target_piecewise_collision_fraction": 0.3333333333333333,
+      "pass": false,
+      "qualifying_mismatch_configs": 4
+    },
+    {
+      "gate": "G5_REPRODUCIBILITY",
+      "missing_files": [],
+      "pass": true
+    }
+  ],
+  "profile": "gate",
+  "rationale": "A matched-baseline advantage exists, but robustness, identifiability, or fiber significance remains limited.",
+  "schema_version": "1.0",
+  "verdict": "CONTINUE_SIGNIFICANT_BUT_NARROW"
+}

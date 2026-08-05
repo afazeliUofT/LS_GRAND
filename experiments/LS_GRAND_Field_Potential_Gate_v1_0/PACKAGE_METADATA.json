@@ -1,0 +1,15 @@
+{
+  "package_name": "LS_GRAND_Field_Potential_Gate_v1_0",
+  "version": "1.0.0",
+  "purpose": "falsification-first field-potential gate",
+  "default_profile": "gate",
+  "repository": "afazeliUofT/LS_GRAND",
+  "working_directory": "/home/afazeli2006/LS_GRAND",
+  "result_verdicts": [
+    "CONTINUE_FIELD_DEFINING_CANDIDATE",
+    "CONTINUE_SIGNIFICANT_BUT_NARROW",
+    "PIVOT_THEORETICAL_OR_APPROXIMATE_ONLY",
+    "STOP_CURRENT_FORM",
+    "INCONCLUSIVE_COMPUTE_OR_STATISTICS"
+  ]
+}

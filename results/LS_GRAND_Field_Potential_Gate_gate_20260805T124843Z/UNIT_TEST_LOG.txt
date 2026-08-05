@@ -1,0 +1,16 @@
+test_adversarial_first_witness_logic (test_certificate_synthetic.TestCertificateAlgebra.test_adversarial_first_witness_logic) ... ok
+test_head_bound_contains_unseen_mass (test_certificate_synthetic.TestCertificateAlgebra.test_head_bound_contains_unseen_mass) ... ok
+test_logsumexp (test_certificate_synthetic.TestCertificateAlgebra.test_logsumexp) ... ok
+test_rank_bound_and_collisions (test_core.TestDiagnostics.test_rank_bound_and_collisions) ... ok
+test_subset_sum_order_and_uniqueness (test_core.TestEnumeration.test_subset_sum_order_and_uniqueness) ... ok
+test_osd_returns_codeword (test_core.TestExactDecoder.test_osd_returns_codeword) ... ok
+test_randomized_marginal_ml_agreement (test_core.TestExactDecoder.test_randomized_marginal_ml_agreement) ... ok
+test_inverse_and_code (test_core.TestGF2.test_inverse_and_code) ... ok
+test_mrb (test_core.TestGF2.test_mrb) ... ok
+test_c4_maps (test_core.TestQPSK.test_c4_maps) ... ok
+test_stream_cost_identity (test_core.TestQPSK.test_stream_cost_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.288s
+
+OK

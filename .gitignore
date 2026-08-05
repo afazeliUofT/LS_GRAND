@@ -1,0 +1,11 @@
+# LS-GRAND local execution environment and non-review artifacts
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+results/**/raw/
+results/**/frame_traces/
+results/**/checkpoints/
+experiments/LS_GRAND_Field_Potential_Gate_v1_0/reference/proposal_extracted_for_audit.txt

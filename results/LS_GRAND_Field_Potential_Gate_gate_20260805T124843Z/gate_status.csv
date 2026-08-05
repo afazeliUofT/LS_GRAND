@@ -1,0 +1,7 @@
+gate,pass,summary
+G0_EXACTNESS,True,"{""nontied_trials"": 120, ""exact_mismatches"": 0, ""certificate_failures"": 0, ""direct_failures"": 0, ""zero_mismatch_95pct_upper"": 0.024655401055656334, ""unit_tests_passed"": true}"
+G1_FIBER_EFFECT,False,"{""marginal_joint_disagreements"": 14, ""marginal_first_disagreements"": 13, ""marginal_errors"": 57, ""joint_errors"": 53, ""first_errors"": 55}"
+G2_MATCHED_SCALING_ADVANTAGE,True,"{""qualifying_configs"": 8, ""qualifying_families"": [""dense"", ""sparse""]}"
+G3_CERTIFICATE_USEFULNESS,False,{}
+G4_IDENTIFIABILITY_AND_ROBUSTNESS,False,"{""qualifying_mismatch_configs"": 4, ""max_mean_target_piecewise_collision_fraction"": 0.3333333333333333}"
+G5_REPRODUCIBILITY,True,"{""missing_files"": []}"

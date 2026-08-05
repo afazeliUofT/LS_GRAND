@@ -1,0 +1,16 @@
+{
+  "automated_smoke_verdict": "INCONCLUSIVE_COMPUTE_OR_STATISTICS",
+  "certificate_verification_failures": 0,
+  "certified_marginal_ml_mismatches": 0,
+  "exact_trials": 8,
+  "marginal_vs_first_disagreements": 2,
+  "marginal_vs_joint_disagreements": 2,
+  "maximum_mean_piecewise_collision_fraction": 1.0,
+  "maximum_smoke_log2_coordinate_separation_lower_bound": 53.74933339356458,
+  "median_exact_query_fraction_of_cartesian": 0.0022638494318181,
+  "median_exact_queue_touch_fraction": 1.0,
+  "non_tied_exact_trials": 8,
+  "note": "Smoke is deliberately underpowered and cannot issue a field-potential continue/stop verdict.",
+  "profile": "smoke",
+  "unit_audit": "PASS"
+}
