@@ -1,0 +1,6 @@
+{
+  "valid": true,
+  "run": "/mnt/data/build_v11/smoke_results4/local_smoke",
+  "problems": [],
+  "verdict": "INCONCLUSIVE_SMOKE_ONLY"
+}

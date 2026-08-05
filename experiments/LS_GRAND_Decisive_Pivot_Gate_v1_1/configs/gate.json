@@ -1,0 +1,667 @@
+{
+  "profile": "gate",
+  "master_seed": 2026080511,
+  "exact_fiber": {
+    "max_k": 16,
+    "checkpoint_every": 50,
+    "cases": [
+      {
+        "id": "EF10_DENSE",
+        "n": 10,
+        "k": 7,
+        "family": "dense",
+        "code_replicates": 2,
+        "trials_per_code": 150,
+        "snr_db": [
+          -3,
+          -1,
+          1,
+          3,
+          5,
+          7
+        ],
+        "true_slip_prob": 0.5,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "EF10_SPARSE",
+        "n": 10,
+        "k": 7,
+        "family": "sparse",
+        "code_replicates": 2,
+        "trials_per_code": 150,
+        "snr_db": [
+          -3,
+          -1,
+          1,
+          3,
+          5,
+          7
+        ],
+        "true_slip_prob": 0.5,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "EF12_DENSE",
+        "n": 12,
+        "k": 8,
+        "family": "dense",
+        "code_replicates": 2,
+        "trials_per_code": 150,
+        "snr_db": [
+          -3,
+          -1,
+          1,
+          3,
+          5,
+          7
+        ],
+        "true_slip_prob": 0.55,
+        "model_slip_prob": 0.55,
+        "directions": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": "EF12_SPARSE",
+        "n": 12,
+        "k": 8,
+        "family": "sparse",
+        "code_replicates": 2,
+        "trials_per_code": 150,
+        "snr_db": [
+          -3,
+          -1,
+          1,
+          3,
+          5,
+          7
+        ],
+        "true_slip_prob": 0.55,
+        "model_slip_prob": 0.55,
+        "directions": [
+          1,
+          3
+        ]
+      }
+    ]
+  },
+  "rank_probe": {
+    "checkpoint_every": 20,
+    "cases": [
+      {
+        "id": "RP32_DENSE",
+        "n": 32,
+        "k": 24,
+        "family": "dense",
+        "code_replicates": 1,
+        "trials_per_location": 20,
+        "snr_db": 7.0,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ],
+        "locations": {
+          "early": 0.15,
+          "middle": 0.5,
+          "late": 0.85
+        },
+        "latent_cap": 25000,
+        "plain_cap": 100000
+      },
+      {
+        "id": "RP32_SPARSE",
+        "n": 32,
+        "k": 24,
+        "family": "sparse",
+        "code_replicates": 1,
+        "trials_per_location": 20,
+        "snr_db": 7.0,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ],
+        "locations": {
+          "early": 0.15,
+          "middle": 0.5,
+          "late": 0.85
+        },
+        "latent_cap": 25000,
+        "plain_cap": 100000
+      },
+      {
+        "id": "RP64_DENSE",
+        "n": 64,
+        "k": 48,
+        "family": "dense",
+        "code_replicates": 1,
+        "trials_per_location": 15,
+        "snr_db": 8.0,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ],
+        "locations": {
+          "early": 0.15,
+          "middle": 0.5,
+          "late": 0.85
+        },
+        "latent_cap": 50000,
+        "plain_cap": 100000
+      },
+      {
+        "id": "RP64_SPARSE",
+        "n": 64,
+        "k": 48,
+        "family": "sparse",
+        "code_replicates": 1,
+        "trials_per_location": 15,
+        "snr_db": 8.0,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ],
+        "locations": {
+          "early": 0.15,
+          "middle": 0.5,
+          "late": 0.85
+        },
+        "latent_cap": 50000,
+        "plain_cap": 100000
+      },
+      {
+        "id": "RP128_DENSE",
+        "n": 128,
+        "k": 104,
+        "family": "dense",
+        "code_replicates": 1,
+        "trials_per_location": 8,
+        "snr_db": 8.0,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ],
+        "locations": {
+          "early": 0.15,
+          "middle": 0.5,
+          "late": 0.85
+        },
+        "latent_cap": 50000,
+        "plain_cap": 100000
+      },
+      {
+        "id": "RP128_SPARSE",
+        "n": 128,
+        "k": 104,
+        "family": "sparse",
+        "code_replicates": 1,
+        "trials_per_location": 8,
+        "snr_db": 8.0,
+        "model_slip_prob": 0.5,
+        "directions": [
+          1,
+          3
+        ],
+        "locations": {
+          "early": 0.15,
+          "middle": 0.5,
+          "late": 0.85
+        },
+        "latent_cap": 50000,
+        "plain_cap": 100000
+      }
+    ]
+  },
+  "orbit_audit": {
+    "cases": [
+      {
+        "id": "OA32_R8_DENSE",
+        "n": 32,
+        "k": 24,
+        "family": "dense",
+        "code_replicates": 30,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA32_R8_SPARSE",
+        "n": 32,
+        "k": 24,
+        "family": "sparse",
+        "code_replicates": 30,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA64_R8_DENSE",
+        "n": 64,
+        "k": 56,
+        "family": "dense",
+        "code_replicates": 30,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA64_R8_SPARSE",
+        "n": 64,
+        "k": 56,
+        "family": "sparse",
+        "code_replicates": 30,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA64_R16_DENSE",
+        "n": 64,
+        "k": 48,
+        "family": "dense",
+        "code_replicates": 30,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA64_R16_SPARSE",
+        "n": 64,
+        "k": 48,
+        "family": "sparse",
+        "code_replicates": 30,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA128_R16_DENSE",
+        "n": 128,
+        "k": 112,
+        "family": "dense",
+        "code_replicates": 20,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA128_R16_SPARSE",
+        "n": 128,
+        "k": 112,
+        "family": "sparse",
+        "code_replicates": 20,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA128_R24_DENSE",
+        "n": 128,
+        "k": 104,
+        "family": "dense",
+        "code_replicates": 20,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      },
+      {
+        "id": "OA128_R24_SPARSE",
+        "n": 128,
+        "k": 104,
+        "family": "sparse",
+        "code_replicates": 20,
+        "directions": [
+          1,
+          2,
+          3
+        ],
+        "dangerous_fraction": 0.001
+      }
+    ]
+  },
+  "performance": {
+    "checkpoint_every": 4,
+    "comparison_list_size": 4,
+    "cases": [
+      {
+        "id": "PF32_DENSE_EARLY",
+        "n": 32,
+        "k": 20,
+        "family": "dense",
+        "code_replicates": 2,
+        "trials_per_code": 30,
+        "snr_db": 7.0,
+        "true_slip_prob": 1.0,
+        "model_slip_prob": 0.5,
+        "forced_location_fraction": 0.2,
+        "directions": [
+          1,
+          3
+        ],
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 25000,
+          "cert_query_cap": 25000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF32_SPARSE_EARLY",
+        "n": 32,
+        "k": 20,
+        "family": "sparse",
+        "code_replicates": 2,
+        "trials_per_code": 30,
+        "snr_db": 7.0,
+        "true_slip_prob": 1.0,
+        "model_slip_prob": 0.5,
+        "forced_location_fraction": 0.2,
+        "directions": [
+          1,
+          3
+        ],
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 25000,
+          "cert_query_cap": 25000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF64_DENSE_EARLY",
+        "n": 64,
+        "k": 48,
+        "family": "dense",
+        "code_replicates": 2,
+        "trials_per_code": 20,
+        "snr_db": 8.0,
+        "true_slip_prob": 1.0,
+        "model_slip_prob": 0.5,
+        "forced_location_fraction": 0.2,
+        "directions": [
+          1,
+          3
+        ],
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 60000,
+          "cert_query_cap": 60000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF64_SPARSE_EARLY",
+        "n": 64,
+        "k": 48,
+        "family": "sparse",
+        "code_replicates": 2,
+        "trials_per_code": 20,
+        "snr_db": 8.0,
+        "true_slip_prob": 1.0,
+        "model_slip_prob": 0.5,
+        "forced_location_fraction": 0.2,
+        "directions": [
+          1,
+          3
+        ],
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 60000,
+          "cert_query_cap": 60000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF64_DENSE_MIX",
+        "n": 64,
+        "k": 48,
+        "family": "dense",
+        "code_replicates": 2,
+        "trials_per_code": 20,
+        "snr_db": 7.0,
+        "true_slip_prob": 0.1,
+        "model_slip_prob": 0.1,
+        "forced_location_fraction": null,
+        "directions": [
+          1,
+          3
+        ],
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 60000,
+          "cert_query_cap": 60000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF64_SPARSE_MIX",
+        "n": 64,
+        "k": 48,
+        "family": "sparse",
+        "code_replicates": 2,
+        "trials_per_code": 20,
+        "snr_db": 7.0,
+        "true_slip_prob": 0.1,
+        "model_slip_prob": 0.1,
+        "forced_location_fraction": null,
+        "directions": [
+          1,
+          3
+        ],
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 60000,
+          "cert_query_cap": 60000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF64_DENSE_PHASE",
+        "n": 64,
+        "k": 48,
+        "family": "dense",
+        "code_replicates": 1,
+        "trials_per_code": 20,
+        "snr_db": 8.0,
+        "true_slip_prob": 0.5,
+        "model_slip_prob": 0.5,
+        "forced_location_fraction": 0.25,
+        "directions": [
+          1,
+          3
+        ],
+        "phase_innovation_std_deg": 0.35,
+        "phase_initial_std_deg": 1.0,
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 60000,
+          "cert_query_cap": 60000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      },
+      {
+        "id": "PF64_SPARSE_PHASE",
+        "n": 64,
+        "k": 48,
+        "family": "sparse",
+        "code_replicates": 1,
+        "trials_per_code": 20,
+        "snr_db": 8.0,
+        "true_slip_prob": 0.5,
+        "model_slip_prob": 0.5,
+        "forced_location_fraction": 0.25,
+        "directions": [
+          1,
+          3
+        ],
+        "phase_innovation_std_deg": 0.35,
+        "phase_initial_std_deg": 1.0,
+        "decoder": {
+          "list_sizes": [
+            2,
+            4,
+            8
+          ],
+          "ls_query_cap": 60000,
+          "cert_query_cap": 60000,
+          "certificate_interval": 32,
+          "osd_order": 2,
+          "osd_pool_size": 10,
+          "osd_state_limit": null,
+          "osd_candidate_cap": 100000,
+          "score_batch_size": 256,
+          "run_certificate": true
+        }
+      }
+    ],
+    "comparison_list_sizes": [
+      2,
+      4,
+      8
+    ]
+  },
+  "thresholds": {
+    "bootstrap_resamples": 1500,
+    "f0_min_nontied": 1000,
+    "f1_min_switch_rate": 0.03,
+    "f1_min_error_gain": 0.002,
+    "f1_max_pvalue": 0.1,
+    "f2_min_n": 64,
+    "f2_min_latent_success": 0.9,
+    "f2_min_median_ratio": 10.0,
+    "f2_min_p10_ratio": 3.0,
+    "f2_min_configs": 4,
+    "f2_min_families": 2,
+    "f2_min_blocklengths": 2,
+    "f3_min_paired_trials": 35,
+    "f3_max_bler_upper": 0.35,
+    "f3_max_ls_error_excess": 0.05,
+    "f3_min_bit_metric_ratio": 10.0,
+    "f3_min_wall_ratio": 2.0,
+    "f3_min_configs": 2,
+    "f3_min_families": 2,
+    "f4_min_certification_rate": 0.95,
+    "f4_max_median_overhead": 10.0,
+    "f4_max_median_queue_touch": 0.5,
+    "f4_max_p90_queue_touch": 0.9,
+    "f4_min_configs": 2,
+    "f5_min_n": 64,
+    "f5_min_redundancy": 16,
+    "f5_min_safe_fraction": 0.8,
+    "f5_min_configs": 2,
+    "f5_min_families": 2,
+    "f5_screenable_fraction": 0.5,
+    "f3_min_component_ratio": 2.0
+  }
+}

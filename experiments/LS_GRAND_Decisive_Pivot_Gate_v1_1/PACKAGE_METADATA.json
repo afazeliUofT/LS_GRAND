@@ -1,0 +1,19 @@
+{
+  "package": "LS_GRAND_Decisive_Pivot_Gate_v1_1",
+  "version": "1.1.0",
+  "created_utc_date": "2026-08-05",
+  "repository": "afazeliUofT/LS_GRAND",
+  "required_base_commit": "531fdae2c27cb798edfe1bff6a8269f2fa341e29",
+  "scientific_status_entering_gate": "PIVOT_EXACT_EFFICIENCY_CONTINUE_ONE_BOUNDED_SALVAGE_GATE",
+  "default_profile": "gate",
+  "field_defining_verdict_authorized": false,
+  "major_repairs": [
+    "correct verdict precedence",
+    "actual noisy rank measurements with censoring",
+    "exact target-length affine orbit collision calculation",
+    "powered paired fiber relevance audit",
+    "cached vectorized matched latent OSD baseline",
+    "pre-registered first-valid and list-size frontier",
+    "hash and schema based result validation"
+  ]
+}

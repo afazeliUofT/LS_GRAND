@@ -1,0 +1,107 @@
+{
+  "field_defining_blockers": [
+    "formal claim-by-claim novelty search remains incomplete",
+    "no measured or defensible platform-specific physical slip model has been validated",
+    "no optimized code-specific BCJR/iterative/pilot-adjusted receiver is included"
+  ],
+  "field_defining_verdict_authorized": false,
+  "gates": [
+    {
+      "cert_mismatches": 0,
+      "certificate_failures_or_caps": 0,
+      "direct_failures": 0,
+      "first_errors": 634,
+      "gate": "F0_EXACTNESS",
+      "joint_errors": 636,
+      "marginal_errors": 625,
+      "marginal_first_switches": 189,
+      "marginal_joint_switches": 170,
+      "marginal_vs_first_mcnemar": {
+        "a_only_errors": 37,
+        "b_only_errors": 46,
+        "discordant": 83,
+        "one_sided_p_a_better": 0.18999969820595902
+      },
+      "marginal_vs_joint_mcnemar": {
+        "a_only_errors": 30,
+        "b_only_errors": 41,
+        "discordant": 71,
+        "one_sided_p_a_better": 0.11754878120417094
+      },
+      "median_effective_path_multiplicity": 1.0623003058608091,
+      "non_tied_trials": 1200,
+      "p90_effective_path_multiplicity": 1.7402794390608796,
+      "pass": true,
+      "trials": 1200,
+      "zero_mismatch_95pct_upper": 0.002493330037518615
+    },
+    {
+      "gate": "F1_MARGINAL_FIBER_RELEVANCE",
+      "marginal_first_switch_rate": 0.1575,
+      "marginal_over_first_error_gain": 0.0075,
+      "mcnemar": {
+        "a_only_errors": 37,
+        "b_only_errors": 46,
+        "discordant": 83,
+        "one_sided_p_a_better": 0.18999969820595902
+      },
+      "median_effective_path_multiplicity": 1.0623003058608091,
+      "pass": false
+    },
+    {
+      "gate": "F2_EMPIRICAL_RANK_COMPRESSION",
+      "pass": true,
+      "qualifying_blocklengths": [
+        64,
+        128
+      ],
+      "qualifying_configs": 8,
+      "qualifying_families": [
+        "dense",
+        "sparse"
+      ]
+    },
+    {
+      "gate": "F3_APPROXIMATE_CANDIDATE_FRONTIER",
+      "pass": true,
+      "qualifying_cases": [
+        "PF32_DENSE_EARLY",
+        "PF32_SPARSE_EARLY",
+        "PF64_DENSE_EARLY",
+        "PF64_DENSE_MIX",
+        "PF64_SPARSE_EARLY",
+        "PF64_SPARSE_MIX"
+      ],
+      "qualifying_configs": 6,
+      "qualifying_families": [
+        "dense",
+        "sparse"
+      ],
+      "qualifying_modes": [
+        "ls_first_valid",
+        "ls_list_marginal_L2",
+        "ls_list_marginal_L4",
+        "ls_list_marginal_L8"
+      ]
+    },
+    {
+      "gate": "F4_EXACT_CERTIFICATE_USEFULNESS",
+      "pass": false,
+      "qualifying_configs": 0
+    },
+    {
+      "gate": "F5_TARGET_ORBIT_IDENTIFIABILITY",
+      "pass": true,
+      "qualifying_configs": 6,
+      "screenable": true
+    },
+    {
+      "gate": "F6_REPRODUCIBILITY",
+      "pass": true,
+      "validator_required": true
+    }
+  ],
+  "profile": "gate",
+  "rationale": "The low-description latent search is promising, but the exact marginal/certificate story is not yet practically justified.",
+  "verdict": "CONTINUE_APPROXIMATE_LATENT_SEARCH_CANDIDATE"
+}

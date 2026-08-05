@@ -1,0 +1,110 @@
+{
+  "created_utc": "20260805T152759Z",
+  "files": [
+    {
+      "bytes": 2466,
+      "path": "FINAL_DECISIVE_REPORT.md",
+      "sha256": "4555b8ad49147c4258c640b0cebfee81c0028d47aef0548029e5b04300b99e85"
+    },
+    {
+      "bytes": 3029,
+      "path": "FINAL_DECISIVE_VERDICT.json",
+      "sha256": "7ec11944cf4872fd6112fb1d5f63372611dc87e42ae98e2d780cb0ce977ece8b"
+    },
+    {
+      "bytes": 14626,
+      "path": "FROZEN_CONFIG.json",
+      "sha256": "a0a6a9ddbbce4acb575e6e13c7ed6fe88b86f68416cb02d07a717fa2728459eb"
+    },
+    {
+      "bytes": 16570,
+      "path": "REPRODUCIBILITY_MANIFEST.json",
+      "sha256": "4262ee9134754bc98f5f397e81215d5a7bcb68bbbfad4dcedb720d8a7d95ba25"
+    },
+    {
+      "bytes": 691,
+      "path": "certificate_comparisons.csv",
+      "sha256": "d59f3f99387a05e03de9d63bb9ec83a2423f12a87b53e30dbb8c40b2b89a9a11"
+    },
+    {
+      "bytes": 944,
+      "path": "exact_fiber_aggregate.csv",
+      "sha256": "497c0add0e1ccd4992c7402c4b787e6c88f7566d7124daad81cc1727a6c7799c"
+    },
+    {
+      "bytes": 759,
+      "path": "exact_fiber_summary.json",
+      "sha256": "e3c8f66e78d23a8d135c76c9ee44035bb99d982c051724666ac8909f8ebd4a86"
+    },
+    {
+      "bytes": 275464,
+      "path": "exact_fiber_trials.csv",
+      "sha256": "bddc1487dd6c6a99fbeedf3b3f0120de7ed31094c1502f636eb72a63da6b3101"
+    },
+    {
+      "bytes": 109782,
+      "path": "figures/actual_noisy_rank_ratio.png",
+      "sha256": "ada32fd537de735a8b36bcb437415bf64ced07da5902452cbe53a22b29e18d59"
+    },
+    {
+      "bytes": 164736,
+      "path": "figures/candidate_frontier.png",
+      "sha256": "4797c7990fab3d4e49186941b61014d863bfcb04b5cbb5e2d2407004908bff77"
+    },
+    {
+      "bytes": 71199,
+      "path": "figures/certificate_overhead.png",
+      "sha256": "c39558ebb65f4d3c6cb3b86e54cf841e0bf06762016da55a4f1add8ce191b977"
+    },
+    {
+      "bytes": 79082,
+      "path": "figures/target_orbit_safe_fraction.png",
+      "sha256": "c1d330475a54c7f313246b0ec1bdd54229e191e2a7f9bc9cf60061f50fde0814"
+    },
+    {
+      "bytes": 1658,
+      "path": "gate_status.csv",
+      "sha256": "1c78f02f546056346f2d28420a1e5b805b6737f4f81efdfc1fc13b887859caef"
+    },
+    {
+      "bytes": 1200,
+      "path": "orbit_aggregate.csv",
+      "sha256": "d7106a1df10abb109084ef9cb0a989125bf51d938fd977c6e8b6b1f02ebe5eaa"
+    },
+    {
+      "bytes": 26783,
+      "path": "orbit_code_summary.csv",
+      "sha256": "cf33f368b1b6a8d39c4718f6584b2c8d004b7bfab8ab86ffeb06d2c4839159b3"
+    },
+    {
+      "bytes": 2399893,
+      "path": "orbit_transform_trials.csv",
+      "sha256": "c08c3a86c5504a3cd45191b41f33c38cf55bbea8a05430e90301f33f0454ea05"
+    },
+    {
+      "bytes": 23540,
+      "path": "performance_aggregate.csv",
+      "sha256": "e1c260ad5a167f6b0080c8c76dbd2f7b776a7870bb9f30db3d065f96e7b489cd"
+    },
+    {
+      "bytes": 8154,
+      "path": "performance_comparisons.csv",
+      "sha256": "e89b7f83b407845374799c88f799e7a186c82a0dd4c71cd845920a1f2399b5db"
+    },
+    {
+      "bytes": 615519,
+      "path": "performance_trials.csv",
+      "sha256": "e6f2d9f8707ee906b3a3a1da218e121cb4d60541ebf008e6178d20ba42c7ce12"
+    },
+    {
+      "bytes": 2627,
+      "path": "rank_probe_aggregate.csv",
+      "sha256": "229e35989dd075924ffa03ad732c42bcb2776f83e931345353b290d88998119d"
+    },
+    {
+      "bytes": 38559,
+      "path": "rank_probe_trials.csv",
+      "sha256": "6f0aee832c5700751ad357e8c65883c6ab24063ac394250eef808aa0950cd24c"
+    }
+  ]
+}

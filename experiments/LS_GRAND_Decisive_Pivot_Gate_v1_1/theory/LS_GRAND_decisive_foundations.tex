@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry}
+\geometry{margin=1in}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\title{Latent-State GRAND: Decisive Foundations After the First Numerical Gate}
+\author{}
+\date{August 5, 2026}
+\begin{document}
+\maketitle
+
+\section{Finite latent fibers}
+Let $\mathcal C\subseteq\{0,1\}^n$ be a membership-testable code and
+$\mathcal S$ a finite latent-state family.  For each $s$, let an injective queue
+enumerate words in nonincreasing
+$w_s(x)=\pi_s p(y\mid x,s)$.  The codeword likelihood is
+\[
+  \Lambda(c)=\sum_{s\in\mathcal S}w_s(c).
+\]
+A largest individual witness need not maximize this sum.
+
+\section{Incremental exact certificate}
+After queue prefixes have been exposed, define $A(c)$ as the revealed mass of
+$c$, $h_s$ as the current head of queue $s$, and
+\[
+ B(c)=\sum_{s:\,c\text{ not revealed in }s}h_s,
+ \qquad B_0=\sum_s h_s.
+\]
+\begin{theorem}
+If a revealed codeword $c^\star$ satisfies
+\[
+ A(c^\star)>\max\left\{B_0,\max_{c\ne c^\star}[A(c)+B(c)]\right\},
+\]
+then $c^\star$ is the unique marginal-ML codeword.
+\end{theorem}
+\begin{proof}
+Queue monotonicity and per-state injectivity give
+$\Lambda(c)\le A(c)+B(c)$ for a revealed rival and
+$\Lambda(c)\le B_0$ for a never-revealed rival, while
+$A(c^\star)\le\Lambda(c^\star)$.  The strict inequality separates all rivals.
+\end{proof}
+The first campaign supports correctness but shows that this bound is often too
+loose for an efficient exact implementation.
+
+\section{Affine orbit intersections}
+For sign-labelled QPSK, a C4 state path induces an affine GF(2) map
+$T(x)=Ax+b$.  Let a binary linear code have generator $G\in\mathbb F_2^{k\times
+n}$ and parity check $H$.  A codeword $c=G^T u$ satisfies $T(c)\in\mathcal C$
+if and only if
+\[
+  HAG^T u=Hb.
+\]
+\begin{theorem}
+Let $r_T=\operatorname{rank}(HAG^T)$.  If the displayed system is inconsistent,
+$\mathcal C\cap T^{-1}(\mathcal C)$ is empty.  If it is consistent, then
+\[
+ \frac{|\mathcal C\cap T^{-1}(\mathcal C)|}{|\mathcal C|}=2^{-r_T}.
+\]
+\end{theorem}
+\begin{proof}
+A consistent rank-$r_T$ linear system in $k$ message variables has
+$2^{k-r_T}$ solutions.  The full-rank generator maps messages injectively to
+codewords, and $|\mathcal C|=2^k$.
+\end{proof}
+For a $180^\circ$ suffix rotation, $A=I$, so the map is a translation.  The
+intersection fraction is therefore either one or zero according as $b\in
+\mathcal C$ or not.
+
+\section{Decision after the first gate}
+The sparse-cause coordinate separation remains plausible, but the current
+exact-efficiency claim must be pivoted unless a tighter certificate is found.
+The next decisive question is whether first-valid or a very small marginal list
+retains matched error performance while dominating cached state-aware OSD, under
+an explicit orbit-safety condition.  Formal novelty and physical relevance
+remain independent mandatory gates.
+\end{document}

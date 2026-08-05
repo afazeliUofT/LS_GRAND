@@ -1,0 +1,66 @@
+[2026-08-05T15:08:30.362776+00:00] ==============================================================================
+[2026-08-05T15:08:30.362897+00:00] LS-GRAND Decisive Pivot Gate v1.1
+[2026-08-05T15:08:30.362929+00:00] ==============================================================================
+[2026-08-05T15:08:30.370791+00:00] + git cat-file -e 531fdae2c27cb798edfe1bff6a8269f2fa341e29^{commit}
+[2026-08-05T15:08:30.373820+00:00] return code: 0
+[2026-08-05T15:08:30.373964+00:00] + git merge-base --is-ancestor 531fdae2c27cb798edfe1bff6a8269f2fa341e29 HEAD
+[2026-08-05T15:08:30.379257+00:00] return code: 0
+[2026-08-05T15:08:30.384229+00:00] Frozen run profile: gate
+[2026-08-05T15:08:30.520423+00:00] Candidate ZIP: /mnt/c/Users/alifa/Downloads/LS_GRAND_Decisive_Pivot_Gate_v1_1.zip | SHA-256 aff5632155b7df18883e25553eb9d60823d68ccc56b22f4c0df371fb6fddbf7c
+[2026-08-05T15:08:30.554323+00:00] Installed verified package at /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1
+[2026-08-05T15:08:30.554751+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m pip install --upgrade pip setuptools wheel
+Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (26.2.1)
+Requirement already satisfied: setuptools in ./.venv/lib/python3.12/site-packages (83.0.0)
+Requirement already satisfied: wheel in ./.venv/lib/python3.12/site-packages (0.47.0)
+Requirement already satisfied: packaging>=24.0 in ./.venv/lib/python3.12/site-packages (from wheel) (26.3)
+[2026-08-05T15:08:31.597795+00:00] return code: 0
+[2026-08-05T15:08:31.598025+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m pip install -e /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1
+Obtaining file:///home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy<3,>=1.24 in ./.venv/lib/python3.12/site-packages (from lsgrand-decisive-pivot-gate==1.1.0) (2.5.1)
+Requirement already satisfied: scipy<2,>=1.10 in ./.venv/lib/python3.12/site-packages (from lsgrand-decisive-pivot-gate==1.1.0) (1.18.0)
+Requirement already satisfied: pandas<3,>=2.0 in ./.venv/lib/python3.12/site-packages (from lsgrand-decisive-pivot-gate==1.1.0) (2.3.3)
+Requirement already satisfied: matplotlib<4,>=3.7 in ./.venv/lib/python3.12/site-packages (from lsgrand-decisive-pivot-gate==1.1.0) (3.11.1)
+Requirement already satisfied: contourpy>=1.0.1 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.28.2 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (1.5.0)
+Requirement already satisfied: packaging>=20.0 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (26.3)
+Requirement already satisfied: pillow>=9 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (12.3.0)
+Requirement already satisfied: pyparsing>=3 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (3.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./.venv/lib/python3.12/site-packages (from pandas<3,>=2.0->lsgrand-decisive-pivot-gate==1.1.0) (2026.3.post1)
+Requirement already satisfied: tzdata>=2022.7 in ./.venv/lib/python3.12/site-packages (from pandas<3,>=2.0->lsgrand-decisive-pivot-gate==1.1.0) (2026.3)
+Requirement already satisfied: six>=1.5 in ./.venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib<4,>=3.7->lsgrand-decisive-pivot-gate==1.1.0) (1.17.0)
+Building wheels for collected packages: lsgrand-decisive-pivot-gate
+  Building editable for lsgrand-decisive-pivot-gate (pyproject.toml): started
+  Building editable for lsgrand-decisive-pivot-gate (pyproject.toml): finished with status 'done'
+  Created wheel for lsgrand-decisive-pivot-gate: filename=lsgrand_decisive_pivot_gate-1.1.0-0.editable-py3-none-any.whl size=1556 sha256=cece50e3141377c74753e64b6bab1426b4bc8ff93f557eb560c98bc11e92fbea
+  Stored in directory: /tmp/pip-ephem-wheel-cache-xiikk7t5/wheels/00/ab/4a/dae424978a5aa94f24916f9c7edac8b0780ec8f2a572c4b3f3
+Successfully built lsgrand-decisive-pivot-gate
+Installing collected packages: lsgrand-decisive-pivot-gate
+Successfully installed lsgrand-decisive-pivot-gate-1.1.0
+[2026-08-05T15:08:34.796341+00:00] return code: 0
+[2026-08-05T15:08:34.796727+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m lsgrand_decisive.cli test --log /home/afazeli2006/LS_GRAND/results/_wrapper_logs/decisive_pivot_unit_tests_20260805T150830Z.log
+[2026-08-05T15:08:39.003518+00:00] return code: 0
+[2026-08-05T15:08:39.004011+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m lsgrand_decisive.cli run --config /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1/configs/gate.json --output-root /home/afazeli2006/LS_GRAND/results --run-name LS_GRAND_Decisive_Pivot_Gate_gate_20260805T150830Z --skip-tests
+{
+  "status": "COMPLETE",
+  "run_dir": "/home/afazeli2006/LS_GRAND/results/LS_GRAND_Decisive_Pivot_Gate_gate_20260805T150830Z"
+}
+[2026-08-05T15:27:59.598314+00:00] return code: 0
+[2026-08-05T15:27:59.599035+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1/scripts/validate_results.py /home/afazeli2006/LS_GRAND/results/LS_GRAND_Decisive_Pivot_Gate_gate_20260805T150830Z
+{
+  "valid": true,
+  "run": "/home/afazeli2006/LS_GRAND/results/LS_GRAND_Decisive_Pivot_Gate_gate_20260805T150830Z",
+  "problems": [],
+  "verdict": "CONTINUE_APPROXIMATE_LATENT_SEARCH_CANDIDATE"
+}
+[2026-08-05T15:28:00.089431+00:00] return code: 0

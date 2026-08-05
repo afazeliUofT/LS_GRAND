@@ -1,0 +1,13 @@
+{
+  "wrapper_version": "1.1.0",
+  "package_filename": "LS_GRAND_Decisive_Pivot_Gate_v1_1.zip",
+  "package_sha256": "aff5632155b7df18883e25553eb9d60823d68ccc56b22f4c0df371fb6fddbf7c",
+  "package_source": "/mnt/c/Users/alifa/Downloads/LS_GRAND_Decisive_Pivot_Gate_v1_1.zip",
+  "profile": "gate",
+  "run_name": "LS_GRAND_Decisive_Pivot_Gate_gate_20260805T150830Z",
+  "repository": "afazeliUofT/LS_GRAND",
+  "required_base_commit": "531fdae2c27cb798edfe1bff6a8269f2fa341e29",
+  "git_head_before_commit": "531fdae2c27cb798edfe1bff6a8269f2fa341e29",
+  "unit_test_log_source": "results/_wrapper_logs/decisive_pivot_unit_tests_20260805T150830Z.log",
+  "completed_utc": "20260805T152800Z"
+}

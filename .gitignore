@@ -9,3 +9,13 @@ results/**/raw/
 results/**/frame_traces/
 results/**/checkpoints/
 experiments/LS_GRAND_Field_Potential_Gate_v1_0/reference/proposal_extracted_for_audit.txt
+# LS-GRAND decisive pivot local execution
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1/.installed_package_sha256
+experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1.previous_*/
+experiments/.extract_LS_GRAND_Decisive_Pivot_Gate_v1_1_*/

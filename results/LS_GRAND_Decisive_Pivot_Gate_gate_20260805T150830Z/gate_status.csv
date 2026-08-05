@@ -1,0 +1,8 @@
+gate,pass,trials,non_tied_trials,cert_mismatches,certificate_failures_or_caps,direct_failures,marginal_joint_switches,marginal_first_switches,marginal_errors,joint_errors,first_errors,marginal_vs_joint_mcnemar,marginal_vs_first_mcnemar,median_effective_path_multiplicity,p90_effective_path_multiplicity,zero_mismatch_95pct_upper,marginal_first_switch_rate,marginal_over_first_error_gain,mcnemar,qualifying_configs,qualifying_families,qualifying_blocklengths,qualifying_cases,qualifying_modes,screenable,validator_required
+F0_EXACTNESS,True,1200.0,1200.0,0.0,0.0,0.0,170.0,189.0,625.0,636.0,634.0,"{'a_only_errors': 30, 'b_only_errors': 41, 'discordant': 71, 'one_sided_p_a_better': 0.11754878120417094}","{'a_only_errors': 37, 'b_only_errors': 46, 'discordant': 83, 'one_sided_p_a_better': 0.18999969820595902}",1.0623003058608091,1.7402794390608796,0.002493330037518615,,,,,,,,,,
+F1_MARGINAL_FIBER_RELEVANCE,False,,,,,,,,,,,,,1.0623003058608091,,,0.1575,0.0075,"{'a_only_errors': 37, 'b_only_errors': 46, 'discordant': 83, 'one_sided_p_a_better': 0.18999969820595902}",,,,,,,
+F2_EMPIRICAL_RANK_COMPRESSION,True,,,,,,,,,,,,,,,,,,,8.0,"['dense', 'sparse']","[64, 128]",,,,
+F3_APPROXIMATE_CANDIDATE_FRONTIER,True,,,,,,,,,,,,,,,,,,,6.0,"['dense', 'sparse']",,"['PF32_DENSE_EARLY', 'PF32_SPARSE_EARLY', 'PF64_DENSE_EARLY', 'PF64_DENSE_MIX', 'PF64_SPARSE_EARLY', 'PF64_SPARSE_MIX']","['ls_first_valid', 'ls_list_marginal_L2', 'ls_list_marginal_L4', 'ls_list_marginal_L8']",,
+F4_EXACT_CERTIFICATE_USEFULNESS,False,,,,,,,,,,,,,,,,,,,0.0,,,,,,
+F5_TARGET_ORBIT_IDENTIFIABILITY,True,,,,,,,,,,,,,,,,,,,6.0,,,,,True,
+F6_REPRODUCIBILITY,True,,,,,,,,,,,,,,,,,,,,,,,,,True

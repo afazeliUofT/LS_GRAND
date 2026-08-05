@@ -1,0 +1,13 @@
+test_affine_matches_waveform_map (test_core.TestAffineOrbit.test_affine_matches_waveform_map) ... ok
+test_algebraic_collision_matches_enumeration (test_core.TestAffineOrbit.test_algebraic_collision_matches_enumeration) ... ok
+test_batch_score_matches_direct_oracle (test_core.TestDecoders.test_batch_score_matches_direct_oracle) ... ok
+test_certified_decoder_matches_oracle (test_core.TestDecoders.test_certified_decoder_matches_oracle) ... ok
+test_list_and_osd_return_codewords (test_core.TestDecoders.test_list_and_osd_return_codewords) ... ok
+test_rank_probe_noiseless_like (test_core.TestDecoders.test_rank_probe_noiseless_like) ... ok
+test_config_loads (test_core.TestPolicy.test_config_loads) ... ok
+test_failed_certificate_cannot_upgrade (test_core.TestPolicy.test_failed_certificate_cannot_upgrade) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.481s
+
+OK

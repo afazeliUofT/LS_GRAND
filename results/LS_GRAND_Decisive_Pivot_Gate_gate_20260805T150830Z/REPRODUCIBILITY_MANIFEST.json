@@ -1,0 +1,680 @@
+{
+  "config": {
+    "exact_fiber": {
+      "cases": [
+        {
+          "code_replicates": 2,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "id": "EF10_DENSE",
+          "k": 7,
+          "model_slip_prob": 0.5,
+          "n": 10,
+          "snr_db": [
+            -3,
+            -1,
+            1,
+            3,
+            5,
+            7
+          ],
+          "trials_per_code": 150,
+          "true_slip_prob": 0.5
+        },
+        {
+          "code_replicates": 2,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "id": "EF10_SPARSE",
+          "k": 7,
+          "model_slip_prob": 0.5,
+          "n": 10,
+          "snr_db": [
+            -3,
+            -1,
+            1,
+            3,
+            5,
+            7
+          ],
+          "trials_per_code": 150,
+          "true_slip_prob": 0.5
+        },
+        {
+          "code_replicates": 2,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "id": "EF12_DENSE",
+          "k": 8,
+          "model_slip_prob": 0.55,
+          "n": 12,
+          "snr_db": [
+            -3,
+            -1,
+            1,
+            3,
+            5,
+            7
+          ],
+          "trials_per_code": 150,
+          "true_slip_prob": 0.55
+        },
+        {
+          "code_replicates": 2,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "id": "EF12_SPARSE",
+          "k": 8,
+          "model_slip_prob": 0.55,
+          "n": 12,
+          "snr_db": [
+            -3,
+            -1,
+            1,
+            3,
+            5,
+            7
+          ],
+          "trials_per_code": 150,
+          "true_slip_prob": 0.55
+        }
+      ],
+      "checkpoint_every": 50,
+      "max_k": 16
+    },
+    "master_seed": 2026080511,
+    "orbit_audit": {
+      "cases": [
+        {
+          "code_replicates": 30,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "dense",
+          "id": "OA32_R8_DENSE",
+          "k": 24,
+          "n": 32
+        },
+        {
+          "code_replicates": 30,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "sparse",
+          "id": "OA32_R8_SPARSE",
+          "k": 24,
+          "n": 32
+        },
+        {
+          "code_replicates": 30,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "dense",
+          "id": "OA64_R8_DENSE",
+          "k": 56,
+          "n": 64
+        },
+        {
+          "code_replicates": 30,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "sparse",
+          "id": "OA64_R8_SPARSE",
+          "k": 56,
+          "n": 64
+        },
+        {
+          "code_replicates": 30,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "dense",
+          "id": "OA64_R16_DENSE",
+          "k": 48,
+          "n": 64
+        },
+        {
+          "code_replicates": 30,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "sparse",
+          "id": "OA64_R16_SPARSE",
+          "k": 48,
+          "n": 64
+        },
+        {
+          "code_replicates": 20,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "dense",
+          "id": "OA128_R16_DENSE",
+          "k": 112,
+          "n": 128
+        },
+        {
+          "code_replicates": 20,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "sparse",
+          "id": "OA128_R16_SPARSE",
+          "k": 112,
+          "n": 128
+        },
+        {
+          "code_replicates": 20,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "dense",
+          "id": "OA128_R24_DENSE",
+          "k": 104,
+          "n": 128
+        },
+        {
+          "code_replicates": 20,
+          "dangerous_fraction": 0.001,
+          "directions": [
+            1,
+            2,
+            3
+          ],
+          "family": "sparse",
+          "id": "OA128_R24_SPARSE",
+          "k": 104,
+          "n": 128
+        }
+      ]
+    },
+    "performance": {
+      "cases": [
+        {
+          "code_replicates": 2,
+          "decoder": {
+            "cert_query_cap": 25000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 25000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "forced_location_fraction": 0.2,
+          "id": "PF32_DENSE_EARLY",
+          "k": 20,
+          "model_slip_prob": 0.5,
+          "n": 32,
+          "snr_db": 7.0,
+          "trials_per_code": 30,
+          "true_slip_prob": 1.0
+        },
+        {
+          "code_replicates": 2,
+          "decoder": {
+            "cert_query_cap": 25000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 25000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "forced_location_fraction": 0.2,
+          "id": "PF32_SPARSE_EARLY",
+          "k": 20,
+          "model_slip_prob": 0.5,
+          "n": 32,
+          "snr_db": 7.0,
+          "trials_per_code": 30,
+          "true_slip_prob": 1.0
+        },
+        {
+          "code_replicates": 2,
+          "decoder": {
+            "cert_query_cap": 60000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 60000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "forced_location_fraction": 0.2,
+          "id": "PF64_DENSE_EARLY",
+          "k": 48,
+          "model_slip_prob": 0.5,
+          "n": 64,
+          "snr_db": 8.0,
+          "trials_per_code": 20,
+          "true_slip_prob": 1.0
+        },
+        {
+          "code_replicates": 2,
+          "decoder": {
+            "cert_query_cap": 60000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 60000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "forced_location_fraction": 0.2,
+          "id": "PF64_SPARSE_EARLY",
+          "k": 48,
+          "model_slip_prob": 0.5,
+          "n": 64,
+          "snr_db": 8.0,
+          "trials_per_code": 20,
+          "true_slip_prob": 1.0
+        },
+        {
+          "code_replicates": 2,
+          "decoder": {
+            "cert_query_cap": 60000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 60000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "forced_location_fraction": null,
+          "id": "PF64_DENSE_MIX",
+          "k": 48,
+          "model_slip_prob": 0.1,
+          "n": 64,
+          "snr_db": 7.0,
+          "trials_per_code": 20,
+          "true_slip_prob": 0.1
+        },
+        {
+          "code_replicates": 2,
+          "decoder": {
+            "cert_query_cap": 60000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 60000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "forced_location_fraction": null,
+          "id": "PF64_SPARSE_MIX",
+          "k": 48,
+          "model_slip_prob": 0.1,
+          "n": 64,
+          "snr_db": 7.0,
+          "trials_per_code": 20,
+          "true_slip_prob": 0.1
+        },
+        {
+          "code_replicates": 1,
+          "decoder": {
+            "cert_query_cap": 60000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 60000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "forced_location_fraction": 0.25,
+          "id": "PF64_DENSE_PHASE",
+          "k": 48,
+          "model_slip_prob": 0.5,
+          "n": 64,
+          "phase_initial_std_deg": 1.0,
+          "phase_innovation_std_deg": 0.35,
+          "snr_db": 8.0,
+          "trials_per_code": 20,
+          "true_slip_prob": 0.5
+        },
+        {
+          "code_replicates": 1,
+          "decoder": {
+            "cert_query_cap": 60000,
+            "certificate_interval": 32,
+            "list_sizes": [
+              2,
+              4,
+              8
+            ],
+            "ls_query_cap": 60000,
+            "osd_candidate_cap": 100000,
+            "osd_order": 2,
+            "osd_pool_size": 10,
+            "osd_state_limit": null,
+            "run_certificate": true,
+            "score_batch_size": 256
+          },
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "forced_location_fraction": 0.25,
+          "id": "PF64_SPARSE_PHASE",
+          "k": 48,
+          "model_slip_prob": 0.5,
+          "n": 64,
+          "phase_initial_std_deg": 1.0,
+          "phase_innovation_std_deg": 0.35,
+          "snr_db": 8.0,
+          "trials_per_code": 20,
+          "true_slip_prob": 0.5
+        }
+      ],
+      "checkpoint_every": 4,
+      "comparison_list_size": 4,
+      "comparison_list_sizes": [
+        2,
+        4,
+        8
+      ]
+    },
+    "profile": "gate",
+    "rank_probe": {
+      "cases": [
+        {
+          "code_replicates": 1,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "id": "RP32_DENSE",
+          "k": 24,
+          "latent_cap": 25000,
+          "locations": {
+            "early": 0.15,
+            "late": 0.85,
+            "middle": 0.5
+          },
+          "model_slip_prob": 0.5,
+          "n": 32,
+          "plain_cap": 100000,
+          "snr_db": 7.0,
+          "trials_per_location": 20
+        },
+        {
+          "code_replicates": 1,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "id": "RP32_SPARSE",
+          "k": 24,
+          "latent_cap": 25000,
+          "locations": {
+            "early": 0.15,
+            "late": 0.85,
+            "middle": 0.5
+          },
+          "model_slip_prob": 0.5,
+          "n": 32,
+          "plain_cap": 100000,
+          "snr_db": 7.0,
+          "trials_per_location": 20
+        },
+        {
+          "code_replicates": 1,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "id": "RP64_DENSE",
+          "k": 48,
+          "latent_cap": 50000,
+          "locations": {
+            "early": 0.15,
+            "late": 0.85,
+            "middle": 0.5
+          },
+          "model_slip_prob": 0.5,
+          "n": 64,
+          "plain_cap": 100000,
+          "snr_db": 8.0,
+          "trials_per_location": 15
+        },
+        {
+          "code_replicates": 1,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "id": "RP64_SPARSE",
+          "k": 48,
+          "latent_cap": 50000,
+          "locations": {
+            "early": 0.15,
+            "late": 0.85,
+            "middle": 0.5
+          },
+          "model_slip_prob": 0.5,
+          "n": 64,
+          "plain_cap": 100000,
+          "snr_db": 8.0,
+          "trials_per_location": 15
+        },
+        {
+          "code_replicates": 1,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "dense",
+          "id": "RP128_DENSE",
+          "k": 104,
+          "latent_cap": 50000,
+          "locations": {
+            "early": 0.15,
+            "late": 0.85,
+            "middle": 0.5
+          },
+          "model_slip_prob": 0.5,
+          "n": 128,
+          "plain_cap": 100000,
+          "snr_db": 8.0,
+          "trials_per_location": 8
+        },
+        {
+          "code_replicates": 1,
+          "directions": [
+            1,
+            3
+          ],
+          "family": "sparse",
+          "id": "RP128_SPARSE",
+          "k": 104,
+          "latent_cap": 50000,
+          "locations": {
+            "early": 0.15,
+            "late": 0.85,
+            "middle": 0.5
+          },
+          "model_slip_prob": 0.5,
+          "n": 128,
+          "plain_cap": 100000,
+          "snr_db": 8.0,
+          "trials_per_location": 8
+        }
+      ],
+      "checkpoint_every": 20
+    },
+    "thresholds": {
+      "bootstrap_resamples": 1500,
+      "f0_min_nontied": 1000,
+      "f1_max_pvalue": 0.1,
+      "f1_min_error_gain": 0.002,
+      "f1_min_switch_rate": 0.03,
+      "f2_min_blocklengths": 2,
+      "f2_min_configs": 4,
+      "f2_min_families": 2,
+      "f2_min_latent_success": 0.9,
+      "f2_min_median_ratio": 10.0,
+      "f2_min_n": 64,
+      "f2_min_p10_ratio": 3.0,
+      "f3_max_bler_upper": 0.35,
+      "f3_max_ls_error_excess": 0.05,
+      "f3_min_bit_metric_ratio": 10.0,
+      "f3_min_component_ratio": 2.0,
+      "f3_min_configs": 2,
+      "f3_min_families": 2,
+      "f3_min_paired_trials": 35,
+      "f3_min_wall_ratio": 2.0,
+      "f4_max_median_overhead": 10.0,
+      "f4_max_median_queue_touch": 0.5,
+      "f4_max_p90_queue_touch": 0.9,
+      "f4_min_certification_rate": 0.95,
+      "f4_min_configs": 2,
+      "f5_min_configs": 2,
+      "f5_min_families": 2,
+      "f5_min_n": 64,
+      "f5_min_redundancy": 16,
+      "f5_min_safe_fraction": 0.8,
+      "f5_screenable_fraction": 0.5
+    }
+  },
+  "created_utc": "20260805T150840Z",
+  "git_branch": "main",
+  "git_commit_at_run_start": "531fdae2c27cb798edfe1bff6a8269f2fa341e29",
+  "git_remote": "git@github.com:afazeliUofT/LS_GRAND.git",
+  "machine": "x86_64",
+  "numpy": "2.5.1",
+  "package_root": "/home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Decisive_Pivot_Gate_v1_1",
+  "pandas": "2.3.3",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "run_dir": "/home/afazeli2006/LS_GRAND/results/LS_GRAND_Decisive_Pivot_Gate_gate_20260805T150830Z"
+}
