@@ -1,0 +1,28 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,geometry}
+\geometry{margin=1in}
+\title{Trace-Anchored Validation of Approximate Latent-Cause Guessing}
+\author{}
+\date{}
+\begin{document}\maketitle
+\section{Carrier-recovery trace}
+For symbol rate $R_s$ and combined linewidth $\Delta\nu$, the laser phase
+follows $\theta_k=\theta_{k-1}+v_k$ with
+$v_k\sim\mathcal N(0,2\pi\Delta\nu/R_s)$.  Fourth-power QPSK carrier recovery
+forms a causal moving average of $-y_k^4/|y_k|^4$, divides its phase by four,
+and unwraps the $\pi/2$ branches by nearest continuation.  The initial packet
+quadrant is anchored, and residual branch changes define endogenous one-slip
+trace windows.
+\section{Narrow receiver}
+The practical receiver globally merges likelihood-ordered one-slip
+state-conditioned word streams and either returns the first valid codeword
+(LS-FV) or invokes a two-codeword complete state-marginal comparison only when
+the first word has material multi-state support (LS-A2).
+\section{Claim boundary}
+Hidden-state marginalization, generic sorted-list threshold stopping,
+code-aided phase resolution, and adaptive list rescoring are prior principles.
+Only the frozen combination of intra-packet latent-cause component ordering,
+arbitrary-code membership, adaptive first-valid/two-word operation, and affine
+orbit screening remains provisional.  The exact-foundational route is not
+revived by this gate.
+\end{document}

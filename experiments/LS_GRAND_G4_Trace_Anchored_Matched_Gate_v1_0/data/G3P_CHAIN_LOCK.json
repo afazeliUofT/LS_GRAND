@@ -1,0 +1,15 @@
+{
+  "source_commit": "5edb4083ec30d44061f0020a2701fd189f87df23",
+  "source_verdict": "CONTINUE_TO_FINAL_PHYSICAL_MATCHED_GATE",
+  "independent_disposition": "CONTINUE_WITH_MANDATORY_REPAIRS",
+  "repairs": [
+    "do not describe the top-eight-state OSD precursor as all-state OSD",
+    "add full-state and posterior-pruned code-specific competitors",
+    "replace forced discrete slips by a standard-derived carrier-recovery trace",
+    "control rare-event false-alarm uncertainty with a larger no-slip sample",
+    "compare against differential and optimistic pilot-overhead controls",
+    "retain the exact-foundational and practical-certificate routes as stopped"
+  ],
+  "field_defining_program": "HOLD_NOT_AUTHORIZED",
+  "focused_substantial_paper": "CONDITIONAL_ON_G4"
+}

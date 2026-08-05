@@ -1,0 +1,17 @@
+test_affine_waveform_map (test_core.TestAffineAndPolicy.test_affine_waveform_map) ... ok
+test_collision_matches_enumeration (test_core.TestAffineAndPolicy.test_collision_matches_enumeration) ... ok
+test_configs_and_chain_locks (test_core.TestAffineAndPolicy.test_configs_and_chain_locks) ... ok
+test_bch_dimensions_and_decoder (test_core.TestStructuredCodes.test_bch_dimensions_and_decoder) ... ok
+test_bch_interleaved_decoder (test_core.TestStructuredCodes.test_bch_interleaved_decoder) ... ok
+test_normal_decoders_noiseless (test_core.TestStructuredCodes.test_normal_decoders_noiseless) ... ok
+test_polar_noiseless (test_core.TestStructuredCodes.test_polar_noiseless) ... ok
+test_dqpsk_noiseless_roundtrip (test_core.TestTraceAndSearch.test_dqpsk_noiseless_roundtrip) ... ok
+test_list_osd_and_pruned_baselines_return_codewords (test_core.TestTraceAndSearch.test_list_osd_and_pruned_baselines_return_codewords) ... ok
+test_subset_enumerator_exact (test_core.TestTraceAndSearch.test_subset_enumerator_exact) ... ok
+test_trace_produces_finite_metrics (test_core.TestTraceAndSearch.test_trace_produces_finite_metrics) ... ok
+test_trace_shapes_and_zero_linewidth (test_core.TestTraceAndSearch.test_trace_shapes_and_zero_linewidth) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.497s
+
+OK

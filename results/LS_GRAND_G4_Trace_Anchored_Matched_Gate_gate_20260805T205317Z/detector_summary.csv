@@ -1,0 +1,3 @@
+code_id,alarm_rate_trace_no_slip,alarm_low_trace_no_slip,alarm_high_trace_no_slip,trials_trace_no_slip,alarm_rate_trace_one_slip,alarm_low_trace_one_slip,alarm_high_trace_one_slip,trials_trace_one_slip,alarm_rate_trace_other,alarm_low_trace_other,alarm_high_trace_other,trials_trace_other
+BCH64_45,0.0,0.0,0.0003688199146187622,10000,0.8,0.750195598469339,0.8437686988633358,300,0.34,0.2120547134353817,0.48765248772158837,50
+POLAR64_48,0.0002,2.4221845640429864e-05,0.0007222800577237158,10000,0.5633333333333334,0.5051513681360884,0.620252068176669,300,0.24,0.13060991619745732,0.3816907481040382,50

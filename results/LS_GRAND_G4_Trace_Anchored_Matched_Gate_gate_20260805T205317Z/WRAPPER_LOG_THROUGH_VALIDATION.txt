@@ -1,0 +1,84 @@
+[2026-08-05T20:53:17.845033+00:00] ==============================================================================
+[2026-08-05T20:53:17.845291+00:00] LS-GRAND G4 Trace-Anchored Matched Gate v1.0
+[2026-08-05T20:53:17.845431+00:00] ==============================================================================
+[2026-08-05T20:53:17.853161+00:00] + git cat-file -e 5edb4083ec30d44061f0020a2701fd189f87df23^{commit}
+[2026-08-05T20:53:17.861289+00:00] return code: 0
+[2026-08-05T20:53:17.861650+00:00] + git merge-base --is-ancestor 5edb4083ec30d44061f0020a2701fd189f87df23 HEAD
+[2026-08-05T20:53:17.866905+00:00] return code: 0
+[2026-08-05T20:53:17.870908+00:00] Frozen run profile: gate
+[2026-08-05T20:53:17.995868+00:00] Candidate ZIP: /mnt/c/Users/alifa/Downloads/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0.zip | SHA-256 b7ec31f256ee2ec65ea166caec425e70edd7654d07a1019bbb1a849a11d0f85a
+[2026-08-05T20:53:18.049570+00:00] Installed verified package at /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0
+[2026-08-05T20:53:18.050889+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m pip install --upgrade pip setuptools wheel
+Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (26.2.1)
+Requirement already satisfied: setuptools in ./.venv/lib/python3.12/site-packages (83.0.0)
+Requirement already satisfied: wheel in ./.venv/lib/python3.12/site-packages (0.47.0)
+Requirement already satisfied: packaging>=24.0 in ./.venv/lib/python3.12/site-packages (from wheel) (26.3)
+[2026-08-05T20:53:19.387424+00:00] return code: 0
+[2026-08-05T20:53:19.387762+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m pip install -e /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0
+Obtaining file:///home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy<3,>=1.24 in ./.venv/lib/python3.12/site-packages (from lsgrand-g4-trace-gate==1.0.0) (2.5.1)
+Requirement already satisfied: scipy<2,>=1.10 in ./.venv/lib/python3.12/site-packages (from lsgrand-g4-trace-gate==1.0.0) (1.18.0)
+Requirement already satisfied: pandas<3,>=2.0 in ./.venv/lib/python3.12/site-packages (from lsgrand-g4-trace-gate==1.0.0) (2.3.3)
+Requirement already satisfied: matplotlib<4,>=3.7 in ./.venv/lib/python3.12/site-packages (from lsgrand-g4-trace-gate==1.0.0) (3.11.1)
+Requirement already satisfied: contourpy>=1.0.1 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (0.12.1)
+Requirement already satisfied: fonttools>=4.28.2 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (4.63.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (1.5.0)
+Requirement already satisfied: packaging>=20.0 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (26.3)
+Requirement already satisfied: pillow>=9 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (12.3.0)
+Requirement already satisfied: pyparsing>=3 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (3.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in ./.venv/lib/python3.12/site-packages (from matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./.venv/lib/python3.12/site-packages (from pandas<3,>=2.0->lsgrand-g4-trace-gate==1.0.0) (2026.3.post1)
+Requirement already satisfied: tzdata>=2022.7 in ./.venv/lib/python3.12/site-packages (from pandas<3,>=2.0->lsgrand-g4-trace-gate==1.0.0) (2026.3)
+Requirement already satisfied: six>=1.5 in ./.venv/lib/python3.12/site-packages (from python-dateutil>=2.7->matplotlib<4,>=3.7->lsgrand-g4-trace-gate==1.0.0) (1.17.0)
+Building wheels for collected packages: lsgrand-g4-trace-gate
+  Building editable for lsgrand-g4-trace-gate (pyproject.toml): started
+  Building editable for lsgrand-g4-trace-gate (pyproject.toml): finished with status 'done'
+  Created wheel for lsgrand-g4-trace-gate: filename=lsgrand_g4_trace_gate-1.0.0-0.editable-py3-none-any.whl size=1787 sha256=cdef38754ed49621405535e67cb2ff69e525b319aa60480a8ebb626e1e091e12
+  Stored in directory: /tmp/pip-ephem-wheel-cache-b29xteig/wheels/60/74/b0/c82a26d36ef214135e7cf6fe85f4dc9a0b1cea958957ea524c
+Successfully built lsgrand-g4-trace-gate
+Installing collected packages: lsgrand-g4-trace-gate
+Successfully installed lsgrand-g4-trace-gate-1.0.0
+[2026-08-05T20:53:23.553200+00:00] return code: 0
+[2026-08-05T20:53:23.553790+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m lsgrand_g4.cli test --package-root /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0 --log /home/afazeli2006/LS_GRAND/results/_wrapper_logs/g4_trace_gate_unit_tests_20260805T205317Z.log
+test_affine_waveform_map (test_core.TestAffineAndPolicy.test_affine_waveform_map) ... ok
+test_collision_matches_enumeration (test_core.TestAffineAndPolicy.test_collision_matches_enumeration) ... ok
+test_configs_and_chain_locks (test_core.TestAffineAndPolicy.test_configs_and_chain_locks) ... ok
+test_bch_dimensions_and_decoder (test_core.TestStructuredCodes.test_bch_dimensions_and_decoder) ... ok
+test_bch_interleaved_decoder (test_core.TestStructuredCodes.test_bch_interleaved_decoder) ... ok
+test_normal_decoders_noiseless (test_core.TestStructuredCodes.test_normal_decoders_noiseless) ... ok
+test_polar_noiseless (test_core.TestStructuredCodes.test_polar_noiseless) ... ok
+test_dqpsk_noiseless_roundtrip (test_core.TestTraceAndSearch.test_dqpsk_noiseless_roundtrip) ... ok
+test_list_osd_and_pruned_baselines_return_codewords (test_core.TestTraceAndSearch.test_list_osd_and_pruned_baselines_return_codewords) ... ok
+test_subset_enumerator_exact (test_core.TestTraceAndSearch.test_subset_enumerator_exact) ... ok
+test_trace_produces_finite_metrics (test_core.TestTraceAndSearch.test_trace_produces_finite_metrics) ... ok
+test_trace_shapes_and_zero_linewidth (test_core.TestTraceAndSearch.test_trace_shapes_and_zero_linewidth) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.497s
+
+OK
+[2026-08-05T20:53:30.380103+00:00] return code: 0
+[2026-08-05T20:53:30.380455+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m lsgrand_g4.cli run --package-root /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0 --config /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0/configs/gate.json --output-root /home/afazeli2006/LS_GRAND/results --run-name LS_GRAND_G4_Trace_Anchored_Matched_Gate_gate_20260805T205317Z --skip-tests
+{
+  "status": "COMPLETE",
+  "run_dir": "/home/afazeli2006/LS_GRAND/results/LS_GRAND_G4_Trace_Anchored_Matched_Gate_gate_20260805T205317Z",
+  "verdict": "STOP_APPROXIMATE_ROUTE"
+}
+[2026-08-05T21:09:51.479145+00:00] return code: 0
+[2026-08-05T21:09:51.501703+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0/scripts/validate_results.py /home/afazeli2006/LS_GRAND/results/LS_GRAND_G4_Trace_Anchored_Matched_Gate_gate_20260805T205317Z
+{
+  "problems": [],
+  "run": "/home/afazeli2006/LS_GRAND/results/LS_GRAND_G4_Trace_Anchored_Matched_Gate_gate_20260805T205317Z",
+  "valid": true,
+  "verdict": "STOP_APPROXIMATE_ROUTE"
+}
+[2026-08-05T21:09:55.397772+00:00] return code: 0

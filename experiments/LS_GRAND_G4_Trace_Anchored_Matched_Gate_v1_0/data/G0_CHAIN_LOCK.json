@@ -1,0 +1,29 @@
+{
+  "current_exact_certificate_route": "STOP_AS_PRIMARY_PRACTICAL_ROUTE",
+  "engineering_only_claims": [
+    "C09"
+  ],
+  "field_defining_program": "HOLD_NOT_AUTHORIZED",
+  "foundational_exact_route": "STOP_AS_PRIMARY_NOVELTY_ROUTE",
+  "frozen_practical_focus": "event-triggered LS-FV with adaptively invoked LS-A2 on orbit-screened codes",
+  "narrow_approximate_route": "CONTINUE_ONE_BOUNDED_MATCHED_PHYSICAL_GATE",
+  "patent_freedom_to_operate": "NOT_DETERMINED",
+  "prohibited_claims": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C10",
+    "C11",
+    "C12"
+  ],
+  "provisional_claims": [
+    "C05",
+    "C06",
+    "C07",
+    "C08"
+  ],
+  "schema_version": "1.0",
+  "source_commit": "0d2866b091576fe07521172378ded33da79ed545",
+  "source_verdict": "PASS_NARROWED_APPROXIMATE_CLAIM_FREEZE"
+}

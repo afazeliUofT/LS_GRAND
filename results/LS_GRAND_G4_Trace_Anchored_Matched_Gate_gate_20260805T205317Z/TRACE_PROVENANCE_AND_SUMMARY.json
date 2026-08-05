@@ -1,0 +1,28 @@
+{
+  "combined_linewidth_hz": 2000000.0,
+  "median_min_cpe_confidence_no_slip": 0.38471243697932467,
+  "median_min_cpe_confidence_one_slip": 0.037981621662075714,
+  "no_slip_collected": 20000,
+  "normalized_linewidth": 7.142857142857143e-05,
+  "observed_no_slip_frames": 479585,
+  "observed_one_slip_frames": 300,
+  "observed_other_frames": 115,
+  "one_slip_collected": 300,
+  "one_slip_rate_high": 0.0006998511390572429,
+  "one_slip_rate_low": 0.0005562878636980548,
+  "one_slip_rate_point_estimate": 0.000625,
+  "other_collected": 50,
+  "payload_symbols": 35,
+  "phase_innovation_std_rad": 0.021184875513271906,
+  "snr_db": 8.5,
+  "source_anchor": {
+    "event_relevance_source": "OFC 2012 OTu2G.1 reports measured Poisson cycle-slip probabilities spanning 1e-12 to 1e-3",
+    "physical_parameter_source": "OFC 2014 Th4D.1 reports 28-Gbaud QPSK and 2-MHz combined linewidth with pilot-symbol phase unwrapping",
+    "status": "standard-derived software trace, not measured hardware data",
+    "system": "28-Gbaud QPSK with fourth-power/Viterbi-Viterbi carrier recovery"
+  },
+  "symbol_rate_baud": 28000000000.0,
+  "total_frames_generated": 480000,
+  "vv_window": 13,
+  "warmup_symbols": 64
+}

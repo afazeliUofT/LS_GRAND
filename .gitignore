@@ -39,3 +39,13 @@ dist/
 experiments/LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0/.installed_package_sha256
 experiments/LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0.previous_*/
 experiments/.extract_LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0_*/
+# LS-GRAND G4 trace-gate local execution
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0/.installed_package_sha256
+experiments/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0.previous_*/
+experiments/.extract_LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0_*/

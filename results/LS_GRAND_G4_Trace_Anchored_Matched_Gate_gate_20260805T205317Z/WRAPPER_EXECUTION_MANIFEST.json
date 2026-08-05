@@ -1,0 +1,13 @@
+{
+  "completed_utc": "20260805T210951Z",
+  "git_head_before_commit": "5edb4083ec30d44061f0020a2701fd189f87df23",
+  "package_filename": "LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0.zip",
+  "package_sha256": "b7ec31f256ee2ec65ea166caec425e70edd7654d07a1019bbb1a849a11d0f85a",
+  "package_source": "/mnt/c/Users/alifa/Downloads/LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0.zip",
+  "profile": "gate",
+  "repository": "afazeliUofT/LS_GRAND",
+  "required_base_commit": "5edb4083ec30d44061f0020a2701fd189f87df23",
+  "run_name": "LS_GRAND_G4_Trace_Anchored_Matched_Gate_gate_20260805T205317Z",
+  "unit_test_log_source": "results/_wrapper_logs/g4_trace_gate_unit_tests_20260805T205317Z.log",
+  "wrapper_version": "1.0.0"
+}

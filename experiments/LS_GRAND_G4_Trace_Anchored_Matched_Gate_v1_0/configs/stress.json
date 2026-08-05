@@ -1,0 +1,103 @@
+{
+  "profile": "stress",
+  "master_seed": 2026080532,
+  "codes": [
+    {
+      "id": "BCH64_45",
+      "spec": "extended_bch_64_45",
+      "structured": true,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 1000
+    },
+    {
+      "id": "POLAR64_48",
+      "spec": "polar_64_48",
+      "structured": true,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 1000
+    }
+  ],
+  "trace": {
+    "symbol_rate_baud": 30000000000.0,
+    "combined_linewidth_hz": 4000000.0,
+    "cpe_snr_db": 8.5,
+    "n0": 0.14125375446227545,
+    "vv_window": 13,
+    "warmup_symbols": 96,
+    "payload_symbols": 35,
+    "batch_frames": 5000,
+    "max_total_frames": 1000000,
+    "source_anchor": {
+      "system": "30-Gbaud/4-MHz linewidth robustness trace",
+      "status": "standard-derived stress trace"
+    }
+  },
+  "detector": {
+    "calibration_frames": 50000,
+    "target_false_alarm_rate": 2e-05
+  },
+  "decoders": {
+    "conditional_slip_prior_after_alarm": 0.95,
+    "ls_query_cap": 200000,
+    "adaptive_query_cap": 100000,
+    "adaptive_logsumexp_gain_threshold": 0.25,
+    "score_batch_size": 512,
+    "candidate_cap": 250000,
+    "normal_bch_chase_order": 2,
+    "normal_bch_chase_pool": 8,
+    "normal_polar_flip_trials": 16,
+    "normal_osd_order": 3,
+    "normal_osd_pool": 12,
+    "full_osd_order": 3,
+    "full_osd_pool": 12,
+    "full_osd_audit_frames": 50,
+    "full_bch_chase_order": 3,
+    "full_bch_chase_pool": 8,
+    "full_polar_flip_trials": 16,
+    "posterior_state_limit": 8,
+    "pruned_bch_chase_order": 3,
+    "pruned_bch_chase_pool": 8,
+    "pruned_polar_flip_trials": 16,
+    "dqpsk_n0_factor": 2.0,
+    "full_specific_audit_frames": 1000,
+    "state_marginal_bch_chase_order": 2,
+    "state_marginal_bch_chase_pool": 8,
+    "state_marginal_polar_flip_trials": 16
+  },
+  "trials": {
+    "test_no_slip_frames": 50000,
+    "one_slip_frames": 1000,
+    "other_trace_frames": 200,
+    "checkpoint_every": 100
+  },
+  "controls": {
+    "run_dqpsk": true,
+    "ideal_pilot_overhead_fraction": 0.0039
+  },
+  "thresholds": {
+    "bootstrap_resamples": 3000,
+    "max_orbit_collision_fraction": 0.001,
+    "min_observed_trace_slips": 1000,
+    "min_one_slip_test_frames": 1000,
+    "min_observed_slip_rate": 1e-05,
+    "max_observed_slip_rate": 0.02,
+    "max_false_alarm_upper": 0.0001,
+    "min_slip_detection_lower": 0.85,
+    "min_paired_slip_trials": 900,
+    "min_eligible_work_pairs": 850,
+    "max_candidate_bler_upper": 0.05,
+    "max_candidate_bler_excess": 0.01,
+    "max_candidate_cap_rate": 0.02,
+    "min_median_wall_ratio": 3.0,
+    "min_p99_wall_ratio": 3.0,
+    "max_no_slip_median_overhead_ratio": 1.03,
+    "max_no_slip_p99_overhead_ratio": 1.1,
+    "min_physical_conditional_p99_ratio": 3.0,
+    "min_goodput_ratio_vs_ideal_pilot": 1.0,
+    "min_full_audit_pairs": 50,
+    "max_full_audit_bler_excess": 0.03,
+    "min_full_audit_median_wall_ratio": 2.0,
+    "min_material_bler_improvement": 0.02,
+    "max_wall_slowdown_for_reliability_win": 2.0
+  }
+}

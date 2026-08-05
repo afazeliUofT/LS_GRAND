@@ -1,0 +1,9 @@
+code_id,control,overhead_fraction,net_information_bits_per_symbol,unconditional_bler,goodput_information_bits_per_symbol,note
+BCH64_45,ideal_pilot_phase_unwrap_bound,0.0156,1.3843125,0.0,1.3843125,optimistic bound: assumes pilots eliminate branch slips with no extra decoder cost
+BCH64_45,event_ls_first,0.0,1.40625,3.7500000000000003e-05,1.406197265625,trace-weighted executable receiver
+BCH64_45,event_ls_adaptive_l2,0.0,1.40625,4.7916666666666675e-05,1.4061826171875,trace-weighted executable receiver
+BCH64_45,dqpsk_control,0.030303030303030276,1.3636363636363635,0.007160208333333335,1.353872443181818,trace-weighted executable receiver
+POLAR64_48,ideal_pilot_phase_unwrap_bound,0.0156,1.4766000000000001,0.0007,1.47556638,optimistic bound: assumes pilots eliminate branch slips with no extra decoder cost
+POLAR64_48,event_ls_first,0.0,1.5,0.0007413541666666666,1.49888796875,trace-weighted executable receiver
+POLAR64_48,event_ls_adaptive_l2,0.0,1.5,0.0007434375,1.49888484375,trace-weighted executable receiver
+POLAR64_48,dqpsk_control,0.030303030303030276,1.4545454545454546,0.06130979166666666,1.3653675757575758,trace-weighted executable receiver

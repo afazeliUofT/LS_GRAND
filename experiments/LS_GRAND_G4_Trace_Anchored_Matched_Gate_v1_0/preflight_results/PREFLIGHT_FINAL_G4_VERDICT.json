@@ -1,0 +1,392 @@
+{
+  "exact_foundational_route": "STOPPED",
+  "field_defining_verdict_authorized": false,
+  "focused_substantial_paper_authorized": false,
+  "gates": [
+    {
+      "exact_route_status": "STOPPED_AS_PRIMARY_ROUTE",
+      "field_defining_authorized": false,
+      "g0_commit": "0d2866b091576fe07521172378ded33da79ed545",
+      "g3p_commit": "5edb4083ec30d44061f0020a2701fd189f87df23",
+      "gate": "G0_CHAIN_LOCK",
+      "pass": true
+    },
+    {
+      "gate": "P1_STANDARD_DERIVED_TRACE",
+      "measured_hardware_trace": false,
+      "observed_one_slip_frames": 37,
+      "one_slip_rate": 0.074,
+      "one_slip_rate_high": 0.10055887474646992,
+      "one_slip_rate_low": 0.05263510854899523,
+      "pass": true,
+      "standard_derived_viterbi_viterbi_trace": true,
+      "total_frames_generated": 500,
+      "trace_parameters": {
+        "combined_linewidth_hz": 20000000.0,
+        "median_min_cpe_confidence_no_slip": 0.1763885937879573,
+        "median_min_cpe_confidence_one_slip": 0.06374114737744103,
+        "no_slip_collected": 50,
+        "normalized_linewidth": 0.0007142857142857143,
+        "observed_no_slip_frames": 447,
+        "observed_one_slip_frames": 37,
+        "observed_other_frames": 16,
+        "one_slip_collected": 5,
+        "one_slip_rate_high": 0.10055887474646992,
+        "one_slip_rate_low": 0.05263510854899523,
+        "one_slip_rate_point_estimate": 0.074,
+        "other_collected": 2,
+        "payload_symbols": 35,
+        "phase_innovation_std_rad": 0.06699245856906788,
+        "snr_db": 7.0,
+        "source_anchor": {
+          "status": "smoke-only standard-derived trace"
+        },
+        "symbol_rate_baud": 28000000000.0,
+        "total_frames_generated": 500,
+        "vv_window": 9,
+        "warmup_symbols": 32
+      }
+    },
+    {
+      "gate": "P2_ORBIT_SAFETY",
+      "pass": true,
+      "structured_codes": [
+        "BCH64_45",
+        "POLAR64_48"
+      ],
+      "unsafe": []
+    },
+    {
+      "details": [
+        {
+          "code_id": "BCH64_45",
+          "false_alarm_rate": 0.2,
+          "false_alarm_upper": 0.4366140029966683,
+          "one_slip_detection_lower": 0.47817624989501856,
+          "one_slip_detection_rate": 1.0,
+          "qualifies": true
+        },
+        {
+          "code_id": "POLAR64_48",
+          "false_alarm_rate": 0.05,
+          "false_alarm_upper": 0.24873276277202777,
+          "one_slip_detection_lower": 0.28358206388191054,
+          "one_slip_detection_rate": 0.8,
+          "qualifies": true
+        }
+      ],
+      "gate": "P3_EVENT_TRIGGER",
+      "pass": true
+    },
+    {
+      "details": [
+        {
+          "baseline": "event_full_code_specific",
+          "baseline_to_candidate_component_median_ratio": 0.15873015873015872,
+          "baseline_to_candidate_p99_wall_ratio": 2.0928392163502023,
+          "baseline_to_candidate_wall_median_ratio": 2.0928392163502023,
+          "candidate": "event_ls_first",
+          "candidate_bler": 0.0,
+          "candidate_bler_high": 0.7934506856227626,
+          "candidate_bler_low": 0.0,
+          "candidate_cap_rate": 0.0,
+          "candidate_minus_baseline_error_rate": 0.0,
+          "code_id": "BCH64_45",
+          "component_ratio_high": 0.15873015873015872,
+          "component_ratio_low": 0.15873015873015872,
+          "eligible_work_pairs": 1,
+          "error_diff_high": 0.0,
+          "error_diff_low": 0.0,
+          "family": "extended_bch",
+          "mcnemar": "{\"a_only_errors\": 0, \"b_only_errors\": 0, \"discordant\": 0, \"p_a_better\": 1.0}",
+          "paired_trials": 1,
+          "qualification_route": "speed",
+          "qualifies": true,
+          "wall_ratio_high": 2.0928392163502023,
+          "wall_ratio_low": 2.0928392163502023
+        },
+        {
+          "baseline": "event_posterior_pruned_code_specific",
+          "baseline_to_candidate_component_median_ratio": 0.16666666666666666,
+          "baseline_to_candidate_p99_wall_ratio": 0.21239898181026343,
+          "baseline_to_candidate_wall_median_ratio": 1.3207923716944336,
+          "candidate": "event_ls_first",
+          "candidate_bler": 0.0,
+          "candidate_bler_high": 0.43448246478317476,
+          "candidate_bler_low": 0.0,
+          "candidate_cap_rate": 0.0,
+          "candidate_minus_baseline_error_rate": -0.8,
+          "code_id": "BCH64_45",
+          "component_ratio_high": 0.6,
+          "component_ratio_low": 0.00744047619047619,
+          "eligible_work_pairs": 5,
+          "error_diff_high": -0.4950000000000017,
+          "error_diff_low": -1.0,
+          "family": "extended_bch",
+          "mcnemar": "{\"a_only_errors\": 0, \"b_only_errors\": 4, \"discordant\": 4, \"p_a_better\": 0.0625}",
+          "paired_trials": 5,
+          "qualification_route": "reliability",
+          "qualifies": true,
+          "wall_ratio_high": 1.5014298603809604,
+          "wall_ratio_low": 0.199869193135202
+        },
+        {
+          "baseline": "event_state_marginal_code_specific",
+          "baseline_to_candidate_component_median_ratio": 0.1111111111111111,
+          "baseline_to_candidate_p99_wall_ratio": 0.2700320647038236,
+          "baseline_to_candidate_wall_median_ratio": 1.155445616433672,
+          "candidate": "event_ls_first",
+          "candidate_bler": 0.0,
+          "candidate_bler_high": 0.43448246478317476,
+          "candidate_bler_low": 0.0,
+          "candidate_cap_rate": 0.0,
+          "candidate_minus_baseline_error_rate": -0.8,
+          "code_id": "BCH64_45",
+          "component_ratio_high": 0.4,
+          "component_ratio_low": 0.00496031746031746,
+          "eligible_work_pairs": 5,
+          "error_diff_high": -0.4,
+          "error_diff_low": -1.0,
+          "family": "extended_bch",
+          "mcnemar": "{\"a_only_errors\": 0, \"b_only_errors\": 4, \"discordant\": 4, \"p_a_better\": 0.0625}",
+          "paired_trials": 5,
+          "qualification_route": "reliability",
+          "qualifies": true,
+          "wall_ratio_high": 1.6314663918336256,
+          "wall_ratio_low": 0.22521134830568934
+        },
+        {
+          "baseline": "event_full_code_specific",
+          "baseline_to_candidate_component_median_ratio": NaN,
+          "baseline_to_candidate_p99_wall_ratio": 0.9000208370638301,
+          "baseline_to_candidate_wall_median_ratio": NaN,
+          "candidate": "event_ls_adaptive_l2",
+          "candidate_bler": 0.0,
+          "candidate_bler_high": 0.7934506856227626,
+          "candidate_bler_low": 0.0,
+          "candidate_cap_rate": 1.0,
+          "candidate_minus_baseline_error_rate": 0.0,
+          "code_id": "BCH64_45",
+          "component_ratio_high": NaN,
+          "component_ratio_low": NaN,
+          "eligible_work_pairs": 0,
+          "error_diff_high": 0.0,
+          "error_diff_low": 0.0,
+          "family": "extended_bch",
+          "mcnemar": "{\"a_only_errors\": 0, \"b_only_errors\": 0, \"discordant\": 0, \"p_a_better\": 1.0}",
+          "paired_trials": 1,
+          "qualification_route": "none",
+          "qualifies": false,
+          "wall_ratio_high": NaN,
+          "wall_ratio_low": NaN
+        },
+        {
+          "baseline": "event_posterior_pruned_code_specific",
+          "baseline_to_candidate_component_median_ratio": 0.35119047619047616,
+          "baseline_to_candidate_p99_wall_ratio": 0.09185120251530988,
+          "baseline_to_candidate_wall_median_ratio": 1.3860181968856349,
+          "candidate": "event_ls_adaptive_l2",
+          "candidate_bler": 0.0,
+          "candidate_bler_high": 0.43448246478317476,
+          "candidate_bler_low": 0.0,
+          "candidate_cap_rate": 0.2,
+          "candidate_minus_baseline_error_rate": -0.8,
+          "code_id": "BCH64_45",
+          "component_ratio_high": 0.6,
+          "component_ratio_low": 0.05725190839694656,
+          "eligible_work_pairs": 4,
+          "error_diff_high": -0.4950000000000017,
+          "error_diff_low": -1.0,
+          "family": "extended_bch",
+          "mcnemar": "{\"a_only_errors\": 0, \"b_only_errors\": 4, \"discordant\": 4, \"p_a_better\": 0.0625}",
+          "paired_trials": 5,
+          "qualification_route": "reliability",
+          "qualifies": true,
+          "wall_ratio_high": 1.4856742453761607,
+          "wall_ratio_low": 0.7287784415756428
+        },
+        {
+          "baseline": "event_state_marginal_code_specific",
+          "baseline_to_candidate_component_median_ratio": 0.23412698412698413,
+          "baseline_to_candidate_p99_wall_ratio": 0.11677442918673944,
+          "baseline_to_candidate_wall_median_ratio": 1.2070922441572307,
+          "candidate": "event_ls_adaptive_l2",
+          "candidate_bler": 0.0,
+          "candidate_bler_high": 0.43448246478317476,
+          "candidate_bler_low": 0.0,
+          "candidate_cap_rate": 0.2,
+          "candidate_minus_baseline_error_rate": -0.8,
+          "code_id": "BCH64_45",
+          "component_ratio_high": 0.37857142857142856,
+          "component_ratio_low": 0.03816793893129771,
+          "eligible_work_pairs": 4,
+          "error_diff_high": -0.4,
+          "error_diff_low": -1.0,
+          "family": "extended_bch",
+          "mcnemar": "{\"a_only_errors\": 0, \"b_only_errors\": 4, \"discordant\": 4, \"p_a_better\": 0.0625}",
+          "paired_trials": 5,
+          "qualification_route": "speed",
+          "qualifies": true,
+          "wall_ratio_high": 1.5470990416033437,
+          "wall_ratio_low": 1.0698069870360236
+        }
+      ],
+      "gate": "P4_STRONG_MATCHED_RECOVERY",
+      "pass": false,
+      "qualifying_codes": [
+        "BCH64_45"
+      ],
+      "qualifying_modes_by_code": {
+        "BCH64_45": [
+          "event_ls_first"
+        ],
+        "POLAR64_48": []
+      }
+    },
+    {
+      "details": [
+        {
+          "bler": 0.05,
+          "code_id": "BCH64_45",
+          "decoder": "event_ls_first",
+          "false_alarm_high": 0.4366140029966683,
+          "false_alarm_low": 0.05733399705003278,
+          "false_alarm_rate": 0.2,
+          "median_wall_overhead_ratio": 1.0833275688795747,
+          "p99_wall_overhead_ratio": 57.44208846016277,
+          "qualifies": true,
+          "trials": 20
+        },
+        {
+          "bler": 0.05,
+          "code_id": "BCH64_45",
+          "decoder": "event_ls_adaptive_l2",
+          "false_alarm_high": 0.4366140029966683,
+          "false_alarm_low": 0.05733399705003278,
+          "false_alarm_rate": 0.2,
+          "median_wall_overhead_ratio": 1.0833275688795747,
+          "p99_wall_overhead_ratio": 54.03947287256857,
+          "qualifies": true,
+          "trials": 20
+        },
+        {
+          "bler": 0.05,
+          "code_id": "POLAR64_48",
+          "decoder": "event_ls_first",
+          "false_alarm_high": 0.24873276277202777,
+          "false_alarm_low": 0.0012650894979498047,
+          "false_alarm_rate": 0.05,
+          "median_wall_overhead_ratio": 1.0155692907647917,
+          "p99_wall_overhead_ratio": 39.383037057917974,
+          "qualifies": true,
+          "trials": 20
+        },
+        {
+          "bler": 0.05,
+          "code_id": "POLAR64_48",
+          "decoder": "event_ls_adaptive_l2",
+          "false_alarm_high": 0.24873276277202777,
+          "false_alarm_low": 0.0012650894979498047,
+          "false_alarm_rate": 0.05,
+          "median_wall_overhead_ratio": 1.0155692907647917,
+          "p99_wall_overhead_ratio": 39.37857581075058,
+          "qualifies": true,
+          "trials": 20
+        }
+      ],
+      "gate": "P5_NO_SLIP_NEUTRALITY",
+      "pass": true,
+      "qualifying_modes_by_code": {
+        "BCH64_45": [
+          "event_ls_first",
+          "event_ls_adaptive_l2"
+        ],
+        "POLAR64_48": [
+          "event_ls_first",
+          "event_ls_adaptive_l2"
+        ]
+      }
+    },
+    {
+      "details": [
+        {
+          "baseline_checks": [
+            {
+              "baseline": "event_full_code_specific",
+              "baseline_conditional_slip_bler": 0.0,
+              "candidate_conditional_slip_bler": 0.0,
+              "conditional_p99_wall_ratio": 2.158498790050142,
+              "qualification_route": "speed",
+              "qualifies": true
+            },
+            {
+              "baseline": "event_posterior_pruned_code_specific",
+              "baseline_conditional_slip_bler": 0.8,
+              "candidate_conditional_slip_bler": 0.0,
+              "conditional_p99_wall_ratio": 0.21239898181026343,
+              "qualification_route": "reliability",
+              "qualifies": true
+            },
+            {
+              "baseline": "event_state_marginal_code_specific",
+              "baseline_conditional_slip_bler": 0.8,
+              "candidate_conditional_slip_bler": 0.0,
+              "conditional_p99_wall_ratio": 0.2700320647038236,
+              "qualification_route": "reliability",
+              "qualifies": true
+            }
+          ],
+          "candidate": "event_ls_first",
+          "code_id": "BCH64_45",
+          "mean_wall_seconds": 0.023243721074138735,
+          "observed_one_slip_probability": 0.074,
+          "qualifies": true,
+          "unconditional_bler": 0.0463
+        }
+      ],
+      "gate": "P6_OBSERVED_TRACE_MIXTURE",
+      "measured_hardware_trace": false,
+      "pass": false,
+      "qualifying_modes_by_code": {
+        "BCH64_45": [
+          "event_ls_first"
+        ],
+        "POLAR64_48": []
+      }
+    },
+    {
+      "details": [
+        {
+          "candidate": "event_ls_first",
+          "candidate_goodput": 1.341140625,
+          "code_id": "BCH64_45",
+          "goodput_ratio": 1.0198036741589853,
+          "ideal_pilot_goodput": 1.315096875,
+          "qualifies": true
+        }
+      ],
+      "gate": "P7_RATE_ACCOUNTED_CONTROLS",
+      "ideal_pilot_is_optimistic_bound": true,
+      "pass": false,
+      "qualifying_codes": [
+        "BCH64_45"
+      ]
+    },
+    {
+      "gate": "P8_REPRODUCIBILITY",
+      "pass": true,
+      "validator_required": true
+    }
+  ],
+  "hardware_or_measured_trace_claim_authorized": false,
+  "next_if_ready": [
+    "write a narrowly scoped paper around LS-FV/LS-A2, actual noisy latent rank, orbit screening, and trace-anchored tail complexity",
+    "run one independent external reproduction with the frozen package",
+    "obtain an experimental/hardware trace before claiming deployment readiness",
+    "retain C05-C08 provisional novelty language and do not revive the exact-foundation claim"
+  ],
+  "practical_exact_certificate_route": "STOPPED",
+  "profile": "smoke",
+  "rationale": "Smoke mode validates software and schemas only.",
+  "verdict": "INCONCLUSIVE_SMOKE_ONLY"
+}

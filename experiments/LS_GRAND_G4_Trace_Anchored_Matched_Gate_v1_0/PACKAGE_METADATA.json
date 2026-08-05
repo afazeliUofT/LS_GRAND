@@ -1,0 +1,12 @@
+{
+  "package_name": "LS_GRAND_G4_Trace_Anchored_Matched_Gate_v1_0",
+  "version": "1.0.0",
+  "created_utc": "2026-08-05",
+  "required_repository": "afazeliUofT/LS_GRAND",
+  "required_precursor_commit": "5edb4083ec30d44061f0020a2701fd189f87df23",
+  "required_novelty_commit": "0d2866b091576fe07521172378ded33da79ed545",
+  "maximum_positive_verdict": "READY_FOR_FOCUSED_SUBSTANTIAL_PAPER_PROGRAM",
+  "field_defining_authorized": false,
+  "measured_hardware_trace_included": false,
+  "physical_trace_type": "standard-derived Viterbi-Viterbi software trace"
+}

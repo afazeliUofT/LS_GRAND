@@ -1,0 +1,105 @@
+{
+  "profile": "gate",
+  "master_seed": 2026080531,
+  "codes": [
+    {
+      "id": "BCH64_45",
+      "spec": "extended_bch_64_45",
+      "structured": true,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 500
+    },
+    {
+      "id": "POLAR64_48",
+      "spec": "polar_64_48",
+      "structured": true,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 500
+    }
+  ],
+  "trace": {
+    "symbol_rate_baud": 28000000000.0,
+    "combined_linewidth_hz": 2000000.0,
+    "cpe_snr_db": 8.5,
+    "n0": 0.14125375446227545,
+    "vv_window": 13,
+    "warmup_symbols": 64,
+    "payload_symbols": 35,
+    "batch_frames": 5000,
+    "max_total_frames": 800000,
+    "source_anchor": {
+      "system": "28-Gbaud QPSK with fourth-power/Viterbi-Viterbi carrier recovery",
+      "physical_parameter_source": "OFC 2014 Th4D.1 reports 28-Gbaud QPSK and 2-MHz combined linewidth with pilot-symbol phase unwrapping",
+      "event_relevance_source": "OFC 2012 OTu2G.1 reports measured Poisson cycle-slip probabilities spanning 1e-12 to 1e-3",
+      "status": "standard-derived software trace, not measured hardware data"
+    }
+  },
+  "detector": {
+    "calibration_frames": 10000,
+    "target_false_alarm_rate": 0.0001
+  },
+  "decoders": {
+    "conditional_slip_prior_after_alarm": 0.9,
+    "ls_query_cap": 100000,
+    "adaptive_query_cap": 50000,
+    "adaptive_logsumexp_gain_threshold": 0.25,
+    "score_batch_size": 256,
+    "candidate_cap": 150000,
+    "normal_bch_chase_order": 2,
+    "normal_bch_chase_pool": 6,
+    "normal_polar_flip_trials": 8,
+    "normal_osd_order": 2,
+    "normal_osd_pool": 10,
+    "full_osd_order": 2,
+    "full_osd_pool": 10,
+    "full_osd_audit_frames": 20,
+    "full_bch_chase_order": 2,
+    "full_bch_chase_pool": 6,
+    "full_polar_flip_trials": 8,
+    "posterior_state_limit": 4,
+    "pruned_bch_chase_order": 2,
+    "pruned_bch_chase_pool": 6,
+    "pruned_polar_flip_trials": 8,
+    "dqpsk_n0_factor": 2.0,
+    "full_specific_audit_frames": 300,
+    "state_marginal_bch_chase_order": 2,
+    "state_marginal_bch_chase_pool": 8,
+    "state_marginal_polar_flip_trials": 8
+  },
+  "trials": {
+    "test_no_slip_frames": 10000,
+    "one_slip_frames": 300,
+    "other_trace_frames": 50,
+    "checkpoint_every": 100
+  },
+  "controls": {
+    "run_dqpsk": true,
+    "ideal_pilot_overhead_fraction": 0.0156
+  },
+  "thresholds": {
+    "bootstrap_resamples": 1500,
+    "max_orbit_collision_fraction": 0.001,
+    "min_observed_trace_slips": 200,
+    "min_one_slip_test_frames": 300,
+    "min_observed_slip_rate": 1e-05,
+    "max_observed_slip_rate": 0.02,
+    "max_false_alarm_upper": 0.0005,
+    "min_slip_detection_lower": 0.8,
+    "min_paired_slip_trials": 250,
+    "min_eligible_work_pairs": 240,
+    "max_candidate_bler_upper": 0.1,
+    "max_candidate_bler_excess": 0.02,
+    "max_candidate_cap_rate": 0.05,
+    "min_median_wall_ratio": 2.0,
+    "min_p99_wall_ratio": 2.0,
+    "max_no_slip_median_overhead_ratio": 1.05,
+    "max_no_slip_p99_overhead_ratio": 1.15,
+    "min_physical_conditional_p99_ratio": 2.0,
+    "min_goodput_ratio_vs_ideal_pilot": 1.0,
+    "min_full_audit_pairs": 20,
+    "max_full_audit_bler_excess": 0.05,
+    "min_full_audit_median_wall_ratio": 1.5,
+    "min_material_bler_improvement": 0.02,
+    "max_wall_slowdown_for_reliability_win": 2.0
+  }
+}
