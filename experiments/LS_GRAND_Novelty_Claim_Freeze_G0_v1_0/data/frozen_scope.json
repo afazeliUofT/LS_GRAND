@@ -1,0 +1,23 @@
+{
+  "base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+  "frozen_channel": {
+    "channel": "AWGN after ordinary front-end tracking, plus zero or one persistent residual ±pi/2 phase-state jump",
+    "code_constraint": "binary membership-testable; practical gate restricted to orbit-screened codes with redundancy 16 or 24",
+    "exact_decoder_role": "oracle and approximation benchmark only",
+    "initial_state": "known/anchored",
+    "jump_location": "intra-packet, nonuniform or uniform, tested separately",
+    "modulation": "QPSK with sign labeling; alternative labeling only as an explicit orbit-control variable",
+    "practical_decoder_modes": [
+      "LS-FV first-valid max-witness",
+      "LS-A2 adaptive two-codeword marginal list"
+    ]
+  },
+  "scientific_decision": {
+    "current_exact_certificate_route": "STOP_AS_PRIMARY_PRACTICAL_ROUTE",
+    "field_defining_program": "HOLD_NOT_AUTHORIZED",
+    "foundational_exact_route": "STOP_AS_PRIMARY_NOVELTY_ROUTE",
+    "narrow_approximate_route": "CONTINUE_ONE_BOUNDED_MATCHED_PHYSICAL_GATE",
+    "patent_freedom_to_operate": "NOT_DETERMINED"
+  },
+  "superseded_verdict": "CONTINUE_APPROXIMATE_LATENT_SEARCH_CANDIDATE"
+}

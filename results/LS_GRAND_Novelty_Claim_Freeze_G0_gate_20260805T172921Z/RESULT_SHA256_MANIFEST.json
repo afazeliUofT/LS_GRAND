@@ -1,0 +1,66 @@
+{
+  "ALLOWED_CLAIMS.md": {
+    "bytes": 1357,
+    "sha256": "bdfdeca62452eb3b86d85c8174ec004fb62ddbe344ed217aab84b19320458711"
+  },
+  "BLOCKED_CLAIMS.md": {
+    "bytes": 382,
+    "sha256": "f2e576a4ee7a64b4ef01095c49194fb2cf29eda0f191a97b26b8fc95d6ba8b98"
+  },
+  "CLAIM_MATRIX.csv": {
+    "bytes": 3926,
+    "sha256": "5878cb7005fb259e93bad098400496630e17bba480b1cca0a2fbf6a320619350"
+  },
+  "FINAL_G0_NOVELTY_REPORT.md": {
+    "bytes": 2458,
+    "sha256": "8bdc9e5b1d98745bc376c9f98df38879e371aacab2769f68533910d8aacc4a8a"
+  },
+  "FINAL_G0_NOVELTY_VERDICT.json": {
+    "bytes": 1677,
+    "sha256": "175cd65716428df095e1c53341f7fd373444953539903532696f38bc440a6b64"
+  },
+  "FROZEN_AUDIT_INPUT.json": {
+    "bytes": 30998,
+    "sha256": "388f035f3980170256d08799f790d98aefd5e463bdb203ef8a247950bf2ca54e"
+  },
+  "HUMAN_REVIEW_CHECKLIST.md": {
+    "bytes": 621,
+    "sha256": "28fabbb44ac986c56e3dd444baa88233270638d916133611636d9785f3329709"
+  },
+  "NEXT_GATE_CONTRACT.md": {
+    "bytes": 1827,
+    "sha256": "fefd77417d0ddb9add1a5ff26519007676b222d045cdd2d587be0ca53edda182"
+  },
+  "REPRODUCIBILITY_MANIFEST.json": {
+    "bytes": 677,
+    "sha256": "c1817474cb705e9d69ec2183cc142d633a45e12604f155f751c3278f0fec2961"
+  },
+  "RUN_STATE.json": {
+    "bytes": 175,
+    "sha256": "539caddc1430ac2aa507bd86a4a910042f3c980115dce891fcbd9c8a3c79ae1e"
+  },
+  "SEARCH_QUERY_REGISTER.csv": {
+    "bytes": 1079,
+    "sha256": "11c77c9af60cb3285422ba72630cd38b896fc9ff366db7e834a8dfead51c3fc2"
+  },
+  "SOURCE_MATRIX.csv": {
+    "bytes": 9212,
+    "sha256": "02f5be1d8f4d5d444ebb605bb95254b95c083ca0fc7de0eedb6f4afc942bee47"
+  },
+  "UNIT_TEST_LOG.txt": {
+    "bytes": 936,
+    "sha256": "f8fbf149c090f8219768c8955ca74f5ca01a540f38ded7f3d3367679c6974b01"
+  },
+  "WRAPPER_EXECUTION_MANIFEST.json": {
+    "bytes": 701,
+    "sha256": "b1336c3d5e1db85b96099a42a36d391537c35b10851611f5414cd9c5a4cca569"
+  },
+  "WRAPPER_LOG_BEFORE_VALIDATION.txt": {
+    "bytes": 2997,
+    "sha256": "f281cc7eb4bf5734695d6c46e1ade49ba83d28058768c401ae0a327d0aa82a77"
+  },
+  "WRAPPER_LOG_THROUGH_VALIDATION.txt": {
+    "bytes": 3518,
+    "sha256": "b40609fb49d34310ee78176159ccfc5382612d2f3d56ef0655cd930b5b8809f5"
+  }
+}

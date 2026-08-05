@@ -1,0 +1,49 @@
+{
+  "base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+  "exact_foundational_paper_authorized": false,
+  "field_defining_program_authorized": false,
+  "frozen_practical_focus": "event-triggered LS-FV with adaptively invoked LS-A2 on orbit-screened codes",
+  "gates": [
+    {
+      "base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+      "gate": "N0_INPUT_AND_BASE_EVIDENCE_INTEGRITY",
+      "pass": true
+    },
+    {
+      "gate": "N1_FOUNDATIONAL_EXACT_NOVELTY",
+      "pass": false,
+      "reason": "C01/C02/C11 are anticipated or rejected.",
+      "scientific_disposition": "STOP_AS_PRIMARY_NOVELTY_ROUTE"
+    },
+    {
+      "gate": "N2_NARROW_APPROXIMATE_COMBINATION",
+      "pass": true,
+      "scientific_disposition": "CONTINUE_ONE_BOUNDED_GATE"
+    },
+    {
+      "freedom_to_operate": "NOT_DETERMINED",
+      "gate": "N3_PATENT_PROXIMITY_AND_FTO",
+      "pass": false,
+      "patent_sources": 8,
+      "reason": "Close active/known patent families require counsel."
+    },
+    {
+      "gate": "N4_CLAIM_DISCIPLINE",
+      "pass": true
+    },
+    {
+      "gate": "N5_NEXT_GATE_READINESS",
+      "pass": true
+    },
+    {
+      "gate": "N6_REPRODUCIBILITY",
+      "pass": true,
+      "validator_required": true
+    }
+  ],
+  "next_bounded_numerical_gate_authorized": true,
+  "patent_freedom_to_operate_determined": false,
+  "rationale": "The generic exact marginalization/stopping thesis is not a defensible novelty pillar, but the precise LS-FV/LS-A2 orbit-screened sparse latent-cause combination remains a provisional narrow candidate for one matched physical gate.",
+  "schema_version": "1.0",
+  "verdict": "PASS_NARROWED_APPROXIMATE_CLAIM_FREEZE"
+}

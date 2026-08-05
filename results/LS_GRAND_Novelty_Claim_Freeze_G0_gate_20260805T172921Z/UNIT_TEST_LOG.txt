@@ -1,0 +1,13 @@
+test_base_commit_is_frozen (test_gate.NoveltyGateTests.test_base_commit_is_frozen) ... ok
+test_blocked_language_is_explicit (test_gate.NoveltyGateTests.test_blocked_language_is_explicit) ... ok
+test_expected_gate_verdict (test_gate.NoveltyGateTests.test_expected_gate_verdict) ... ok
+test_field_defining_is_not_authorized (test_gate.NoveltyGateTests.test_field_defining_is_not_authorized) ... ok
+test_gate_renders_and_validates_core_files (test_gate.NoveltyGateTests.test_gate_renders_and_validates_core_files) ... ok
+test_inputs_validate (test_gate.NoveltyGateTests.test_inputs_validate) ... ok
+test_narrow_receiver_is_only_provisional (test_gate.NoveltyGateTests.test_narrow_receiver_is_only_provisional) ... ok
+test_threshold_algorithm_boundary_is_frozen (test_gate.NoveltyGateTests.test_threshold_algorithm_boundary_is_frozen) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.018s
+
+OK

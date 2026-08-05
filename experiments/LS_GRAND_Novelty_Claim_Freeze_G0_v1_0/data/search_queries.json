@@ -1,0 +1,75 @@
+{
+  "queries": [
+    {
+      "domain": "literature",
+      "query": "latent state codeword marginalization phase slip decoder",
+      "query_id": "Q01"
+    },
+    {
+      "domain": "literature",
+      "query": "hidden state sequence decoding codeword marginal likelihood BCJR factor graph",
+      "query_id": "Q02"
+    },
+    {
+      "domain": "literature",
+      "query": "threshold algorithm sorted lists sum threshold top one complete score",
+      "query_id": "Q03"
+    },
+    {
+      "domain": "literature",
+      "query": "code aided cycle slip phase ambiguity candidate rotations decoder evidence",
+      "query_id": "Q04"
+    },
+    {
+      "domain": "literature",
+      "query": "short code list noncoherent complete metric rescoring",
+      "query_id": "Q05"
+    },
+    {
+      "domain": "literature",
+      "query": "GRAND finite state memory correlated channel symbol demodulation",
+      "query_id": "Q06"
+    },
+    {
+      "domain": "literature",
+      "query": "phase equivariant polar code rotational ambiguity",
+      "query_id": "Q07"
+    },
+    {
+      "domain": "patent",
+      "query": "FEC parity check carrier phase estimation parallel rotations",
+      "query_id": "Q08"
+    },
+    {
+      "domain": "patent",
+      "query": "phase slip LDPC coding decoding coherent optical",
+      "query_id": "Q09"
+    },
+    {
+      "domain": "patent",
+      "query": "GRAND higher modulation constellation membership decoder",
+      "query_id": "Q10"
+    },
+    {
+      "domain": "patent",
+      "query": "GRAND architecture universal decoder code membership",
+      "query_id": "Q11"
+    },
+    {
+      "domain": "literature",
+      "query": "adaptive list decoder code validity CRC first valid",
+      "query_id": "Q12"
+    },
+    {
+      "domain": "literature",
+      "query": "group action channel decoding code automorphism constellation rotation",
+      "query_id": "Q13"
+    },
+    {
+      "domain": "literature",
+      "query": "event triggered phase ambiguity decoder model selection",
+      "query_id": "Q14"
+    }
+  ],
+  "schema_version": "1.0"
+}

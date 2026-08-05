@@ -1,0 +1,32 @@
+[2026-08-05T17:29:21.348049+00:00] ==============================================================================
+[2026-08-05T17:29:21.348300+00:00] LS-GRAND Novelty and Claim-Freeze Gate G0 v1.0
+[2026-08-05T17:29:21.348381+00:00] ==============================================================================
+[2026-08-05T17:29:21.383724+00:00] + git cat-file -e ed5a4b4be5dbabeed98691043dd64db6d0415dae^{commit}
+[2026-08-05T17:29:21.394565+00:00] return code: 0
+[2026-08-05T17:29:21.394790+00:00] + git merge-base --is-ancestor ed5a4b4be5dbabeed98691043dd64db6d0415dae HEAD
+[2026-08-05T17:29:21.399802+00:00] return code: 0
+[2026-08-05T17:29:21.410114+00:00] Frozen run profile: gate
+[2026-08-05T17:29:21.504608+00:00] Candidate ZIP: /mnt/c/Users/alifa/Downloads/LS_GRAND_Novelty_Claim_Freeze_G0_v1_0.zip | SHA-256 6fb29339517487eecbd60f6ac1479a08a12d881741b3dea6fcc62ea79132b96d
+[2026-08-05T17:29:21.537383+00:00] Installed verified package at /home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Novelty_Claim_Freeze_G0_v1_0
+[2026-08-05T17:29:21.564340+00:00] Activated venv and installed package path through /home/afazeli2006/LS_GRAND/.venv/lib/python3.12/site-packages/lsgrand_novelty_g0.pth
+[2026-08-05T17:29:21.564434+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -c import lsgrand_novelty; print(lsgrand_novelty.__version__)
+1.0.0
+[2026-08-05T17:29:21.588478+00:00] return code: 0
+[2026-08-05T17:29:21.591708+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m lsgrand_novelty.cli test --log /home/afazeli2006/LS_GRAND/results/_wrapper_logs/novelty_g0_unit_tests_20260805T172921Z.log
+test_base_commit_is_frozen (test_gate.NoveltyGateTests.test_base_commit_is_frozen) ... ok
+test_blocked_language_is_explicit (test_gate.NoveltyGateTests.test_blocked_language_is_explicit) ... ok
+test_expected_gate_verdict (test_gate.NoveltyGateTests.test_expected_gate_verdict) ... ok
+test_field_defining_is_not_authorized (test_gate.NoveltyGateTests.test_field_defining_is_not_authorized) ... ok
+test_gate_renders_and_validates_core_files (test_gate.NoveltyGateTests.test_gate_renders_and_validates_core_files) ... ok
+test_inputs_validate (test_gate.NoveltyGateTests.test_inputs_validate) ... ok
+test_narrow_receiver_is_only_provisional (test_gate.NoveltyGateTests.test_narrow_receiver_is_only_provisional) ... ok
+test_threshold_algorithm_boundary_is_frozen (test_gate.NoveltyGateTests.test_threshold_algorithm_boundary_is_frozen) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.018s
+
+OK
+[2026-08-05T17:29:21.795642+00:00] return code: 0
+[2026-08-05T17:29:21.795901+00:00] + /home/afazeli2006/LS_GRAND/.venv/bin/python -m lsgrand_novelty.cli run --profile gate --output-root /home/afazeli2006/LS_GRAND/results --run-name LS_GRAND_Novelty_Claim_Freeze_G0_gate_20260805T172921Z
+{"status":"COMPLETE","run_dir":"/home/afazeli2006/LS_GRAND/results/LS_GRAND_Novelty_Claim_Freeze_G0_gate_20260805T172921Z"}
+[2026-08-05T17:29:21.911045+00:00] return code: 0

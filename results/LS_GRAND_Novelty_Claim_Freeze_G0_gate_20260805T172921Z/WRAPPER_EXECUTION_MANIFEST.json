@@ -1,0 +1,13 @@
+{
+  "completed_utc_before_git": "20260805T172921Z",
+  "git_head_before_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+  "package_filename": "LS_GRAND_Novelty_Claim_Freeze_G0_v1_0.zip",
+  "package_sha256": "6fb29339517487eecbd60f6ac1479a08a12d881741b3dea6fcc62ea79132b96d",
+  "package_source": "/mnt/c/Users/alifa/Downloads/LS_GRAND_Novelty_Claim_Freeze_G0_v1_0.zip",
+  "profile": "gate",
+  "repository": "afazeliUofT/LS_GRAND",
+  "required_base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+  "run_name": "LS_GRAND_Novelty_Claim_Freeze_G0_gate_20260805T172921Z",
+  "unit_test_log_source": "results/_wrapper_logs/novelty_g0_unit_tests_20260805T172921Z.log",
+  "wrapper_version": "1.0.0"
+}

@@ -1,0 +1,15 @@
+query_id,domain,query
+Q01,literature,latent state codeword marginalization phase slip decoder
+Q02,literature,hidden state sequence decoding codeword marginal likelihood BCJR factor graph
+Q03,literature,threshold algorithm sorted lists sum threshold top one complete score
+Q04,literature,code aided cycle slip phase ambiguity candidate rotations decoder evidence
+Q05,literature,short code list noncoherent complete metric rescoring
+Q06,literature,GRAND finite state memory correlated channel symbol demodulation
+Q07,literature,phase equivariant polar code rotational ambiguity
+Q08,patent,FEC parity check carrier phase estimation parallel rotations
+Q09,patent,phase slip LDPC coding decoding coherent optical
+Q10,patent,GRAND higher modulation constellation membership decoder
+Q11,patent,GRAND architecture universal decoder code membership
+Q12,literature,adaptive list decoder code validity CRC first valid
+Q13,literature,group action channel decoding code automorphism constellation rotation
+Q14,literature,event triggered phase ambiguity decoder model selection

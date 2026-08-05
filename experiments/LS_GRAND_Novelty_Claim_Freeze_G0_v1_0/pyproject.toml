@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsgrand-novelty-g0"
+version = "1.0.0"
+description = "LS-GRAND novelty and claim-freeze gate"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

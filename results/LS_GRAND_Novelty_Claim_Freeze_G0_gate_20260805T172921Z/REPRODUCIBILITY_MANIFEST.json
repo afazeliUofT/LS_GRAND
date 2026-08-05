@@ -1,0 +1,14 @@
+{
+  "claim_count": 12,
+  "created_utc": "20260805T172921Z",
+  "git_branch": "main",
+  "git_commit_at_run_start": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+  "git_remote": "git@github.com:afazeliUofT/LS_GRAND.git",
+  "package_root": "/home/afazeli2006/LS_GRAND/experiments/LS_GRAND_Novelty_Claim_Freeze_G0_v1_0",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "profile": "gate",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "required_base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+  "run_dir": "/home/afazeli2006/LS_GRAND/results/LS_GRAND_Novelty_Claim_Freeze_G0_gate_20260805T172921Z",
+  "source_count": 23
+}

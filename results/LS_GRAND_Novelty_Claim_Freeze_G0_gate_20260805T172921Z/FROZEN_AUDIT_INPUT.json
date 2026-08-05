@@ -1,0 +1,658 @@
+{
+  "claims": {
+    "claims": [
+      {
+        "claim": "Exact codeword likelihood is obtained by marginalizing over all latent state trajectories.",
+        "claim_id": "C01",
+        "classification": "ANTICIPATED_CORE_PRINCIPLE",
+        "closest_sources": [
+          "S02",
+          "S03",
+          "S10"
+        ],
+        "disposition": "BLOCK_AS_NOVELTY",
+        "reason": "Hidden-state posterior marginalization is foundational BCJR/sum-product inference and is already used in phase-noise decoding."
+      },
+      {
+        "claim": "Enumerate per-state sorted lists, fully score encountered words, and stop when the best complete score exceeds the sum of current queue heads.",
+        "claim_id": "C02",
+        "classification": "ANTICIPATED_BY_THRESHOLD_ALGORITHM",
+        "closest_sources": [
+          "S01"
+        ],
+        "disposition": "BLOCK_AS_GENERIC_NEW_THEOREM",
+        "reason": "This is a top-1 sum-aggregation threshold algorithm specialization with code membership acting as a feasibility predicate."
+      },
+      {
+        "claim": "Use FEC/code validity to discriminate among candidate constellation rotations or phase hypotheses.",
+        "claim_id": "C03",
+        "classification": "ANTICIPATED_CORE_APPLICATION",
+        "closest_sources": [
+          "S12",
+          "S14",
+          "S15",
+          "S21"
+        ],
+        "disposition": "BLOCK_AS_NOVELTY",
+        "reason": "Code-aided phase-hypothesis discrimination and cycle-slip-aware FEC are established in papers and patents."
+      },
+      {
+        "claim": "Generate a small candidate-codeword list and apply a complete channel/state-marginal metric to choose the final word.",
+        "claim_id": "C04",
+        "classification": "ANTICIPATED_WORKFLOW",
+        "closest_sources": [
+          "S09",
+          "S13"
+        ],
+        "disposition": "BLOCK_AS_STANDALONE_NOVELTY",
+        "reason": "Short-code list construction followed by a complete noncoherent metric and adaptive list sizing are known."
+      },
+      {
+        "claim": "Globally order state-conditioned word components for a sparse persistent automorphism channel and interleave them with arbitrary-code membership queries.",
+        "claim_id": "C05",
+        "classification": "PARTIALLY_ANTICIPATED_COMBINATION",
+        "closest_sources": [
+          "S04",
+          "S06",
+          "S07",
+          "S08",
+          "S19",
+          "S23"
+        ],
+        "disposition": "ALLOW_ONLY_AS_NARROW_COMBINATION",
+        "reason": "All ingredients have close predecessors, but the reviewed sources did not disclose the identical frozen intra-packet automorphism/component-merge construction."
+      },
+      {
+        "claim": "Return the first valid codeword in the globally ordered sparse latent-cause stream as a practical max-witness decoder for one persistent QPSK slip.",
+        "claim_id": "C06",
+        "classification": "NARROW_CANDIDATE_UNRESOLVED",
+        "closest_sources": [
+          "S04",
+          "S12",
+          "S14",
+          "S19",
+          "S20"
+        ],
+        "disposition": "ALLOW_PROVISIONALLY",
+        "reason": "First-valid GRAND and phase-candidate selection are known, but no reviewed source was found with this exact intra-packet sparse-cause/global-component ordering and arbitrary membership interface."
+      },
+      {
+        "claim": "Invoke complete marginal rescoring only for an adaptively bounded two-codeword latent list when an ambiguity trigger rejects first-valid confidence.",
+        "claim_id": "C07",
+        "classification": "NARROW_CANDIDATE_UNRESOLVED",
+        "closest_sources": [
+          "S09",
+          "S12",
+          "S13"
+        ],
+        "disposition": "ALLOW_PROVISIONALLY",
+        "reason": "Adaptive lists and complete rescoring are known separately; novelty can only be claimed for the precise trigger/order/interface combination after further search."
+      },
+      {
+        "claim": "Screen a binary linear code against one-slip QPSK affine transformations using the consistency/rank system H A G^T u = H b.",
+        "claim_id": "C08",
+        "classification": "USEFUL_SPECIALIZATION_NOT_FOUND_AS_IDENTICAL",
+        "closest_sources": [
+          "S11",
+          "S14",
+          "S22"
+        ],
+        "disposition": "ALLOW_AS_SUPPORTING_CONTRIBUTION",
+        "reason": "Phase-equivariant and rotationally robust coding are established, but the exact target-length affine intersection audit was not found identically in the reviewed sources."
+      },
+      {
+        "claim": "Activate the latent-state search only after a tracker alarm, syndrome/CRC failure, or other event detector.",
+        "claim_id": "C09",
+        "classification": "KNOWN_ARCHITECTURAL_PATTERN",
+        "closest_sources": [
+          "S12",
+          "S13",
+          "S21"
+        ],
+        "disposition": "ALLOW_AS_ENGINEERING_CHOICE_NOT_NOVELTY",
+        "reason": "Event-triggered or adaptive invocation is common; it is needed for practical overhead but is not a novelty pillar."
+      },
+      {
+        "claim": "A general field-defining group-action decoder for arbitrary latent transformation channels.",
+        "claim_id": "C10",
+        "classification": "TOO_BROAD_NOT_AUTHORIZED",
+        "closest_sources": [
+          "S02",
+          "S03",
+          "S06",
+          "S07",
+          "S08",
+          "S20"
+        ],
+        "disposition": "BLOCK",
+        "reason": "The current evidence is one synthetic QPSK slip family and does not support a general or field-defining claim."
+      },
+      {
+        "claim": "The current unseen-codeword certificate is both novel and practically efficient exact marginal-ML decoding.",
+        "claim_id": "C11",
+        "classification": "REJECTED_NOVELTY_AND_PRACTICAL_CLAIM",
+        "closest_sources": [
+          "S01"
+        ],
+        "disposition": "BLOCK",
+        "reason": "The generic threshold structure is anticipated and commit ed5a4b4 showed the practical exact-certificate gate failed."
+      },
+      {
+        "claim": "The work is currently a field-defining candidate.",
+        "claim_id": "C12",
+        "classification": "NOT_AUTHORIZED_BY_EVIDENCE",
+        "closest_sources": [
+          "S20"
+        ],
+        "disposition": "BLOCK",
+        "reason": "Formal novelty, optimized matched baselines, structured codes, physical relevance, and implementation-level evidence remain incomplete."
+      }
+    ],
+    "schema_version": "1.0"
+  },
+  "language": {
+    "allowed_supporting_statements": [
+      "The exact marginal decoder is a correctness oracle and approximation benchmark, not the practical flagship.",
+      "The present evidence supports a search-coordinate advantage for early and middle one-slip QPSK events.",
+      "Orbit screening is required; very-high-rate low-redundancy codes are not unrestricted targets.",
+      "Any practical advantage must survive optimized event-triggered state-aware baselines and a defensible physical model."
+    ],
+    "blocked_phrases": [
+      "first code-aided phase-slip correction",
+      "first marginalization over hidden states",
+      "new generic exact stopping theorem",
+      "first GRAND decoder with memory",
+      "first phase-aware GRAND",
+      "field-defining exact LS-GRAND",
+      "practically efficient exact certificate",
+      "general solution to continuous phase noise",
+      "patent clearance",
+      "freedom to operate established"
+    ],
+    "novelty_qualifier": "To the best of our knowledge after the frozen scientific search, the identical combination of sparse intra-packet persistent automorphism-component ordering, arbitrary-code membership, adaptive first-valid/L=2 operation, and explicit orbit screening was not found. This is a provisional scientific novelty position, not a patent-validity or freedom-to-operate opinion.",
+    "primary_claim": "For a frozen zero-or-one persistent QPSK phase-jump model, we study a code-agnostic latent-cause guessing receiver that globally orders state-conditioned candidate components and invokes an arbitrary code-membership oracle. The practical modes are first-valid decoding and an adaptively invoked two-codeword list with complete state-marginal rescoring. We measure actual noisy rank compression, tail work, and affine orbit safety against matched state-aware receivers.",
+    "working_title": "Sparse Latent-Cause Guessing for Rare Persistent QPSK Phase-State Jumps"
+  },
+  "next_gate": {
+    "algorithms": {
+      "oracle": [
+        "exact marginal LS-GRAND on tractable cases"
+      ],
+      "primary": [
+        "LS-FV",
+        "LS-A2 with frozen ambiguity trigger"
+      ],
+      "prohibited_as_primary": [
+        "current exact certificate",
+        "fixed L=4",
+        "fixed L=8"
+      ]
+    },
+    "authorization": "AUTHORIZED_ONLY_AFTER_THIS_CLAIM_FREEZE_IS_REVIEWED",
+    "codes": [
+      {
+        "family": "extended BCH",
+        "targets": [
+          "[64,45,8] or a verified nearby extended BCH configuration",
+          "orbit-screen before use"
+        ]
+      },
+      {
+        "family": "CRC-polar",
+        "targets": [
+          "n=64 and n=128",
+          "total redundancy 16 and 24",
+          "CA-SCL baseline"
+        ]
+      },
+      {
+        "family": "random linear control",
+        "targets": [
+          "[64,48]",
+          "[128,104]"
+        ]
+      }
+    ],
+    "gate_name": "G3P_STRUCTURED_MATCHED_PHYSICAL_PRECURSOR",
+    "mandatory_repairs": [
+      "Use eligible_work_pairs, not all paired_trials, for work-ratio sample thresholds."
+    ],
+    "matched_baselines": [
+      "event-triggered all-state OSD with the identical cached state metric kernel",
+      "C4 forward-backward/BCJR state inference followed by a strong code decoder",
+      "decode-every-state strong code-specific decoder with complete candidate reranking",
+      "ordinary no-slip decoder plus the same trigger",
+      "pilot-assisted and differential alternatives at equal information bits, packet duration, bandwidth, and energy"
+    ],
+    "objective": "Determine whether LS-FV/LS-A2 retains a tail-work or net-overhead advantage against optimized matched receivers on structured codes in a defensible residual-cycle-slip model.",
+    "pass_conditions": [
+      "Across at least two structured code families, LS-FV or LS-A2 has no preregistered material reliability loss versus the strongest matched practical receiver.",
+      "At least one physically defensible region shows approximately 10x or greater p99 normalized-work reduction, or a clear equal-net-rate pilot/energy advantage.",
+      "No-slip p99 overhead remains small under the measured event rate and event trigger.",
+      "Orbit screening removes exact ambiguity without unacceptable redundancy.",
+      "The conclusion survives prior, phase-drift, and one-extra-jump mismatch."
+    ],
+    "physical_anchor": {
+      "must_measure": [
+        "frame slip probability",
+        "jump location distribution",
+        "residual continuous phase error",
+        "tracker detection uncertainty",
+        "pilot/differential overhead"
+      ],
+      "preferred": "coherent optical QPSK residual cycle slips after a conventional carrier-phase estimator",
+      "wireless_alternative": "pilot-limited short burst only after a trace, hardware-emulated process, or defensible standards/oscillator/tracker-derived model is supplied"
+    },
+    "statistics": {
+      "report": [
+        "conditional-on-slip BLER",
+        "unconditional BLER weighted by event rate",
+        "undetected errors",
+        "erasures",
+        "p50/p90/p99 work",
+        "p99 no-slip overhead",
+        "cap/censor rate",
+        "same-platform wall time"
+      ],
+      "separate_metrics": [
+        "latent components",
+        "membership queries",
+        "complete marginal scores",
+        "BCJR state-branch metrics",
+        "OSD reprocessings",
+        "code-decoder executions",
+        "wall time",
+        "energy estimate"
+      ],
+      "stopping": "at least 200 relevant errors per primary point or a preregistered confidence-width rule",
+      "target_bler_region": "10^-3 to 10^-1 for primary matched comparisons"
+    },
+    "stop_conditions": [
+      "Optimized event-triggered BCJR or code-specific state sweep is within roughly 2x in p99 work at equivalent reliability.",
+      "The physical event rate is too small for unconditional benefit after normal-frame overhead.",
+      "Residual continuous phase uncertainty destroys concentration on a small state set.",
+      "The narrowed approximate combination is directly anticipated by a newly found source or blocking patent claim.",
+      "Structured target codes exhibit unavoidable orbit ambiguity."
+    ]
+  },
+  "queries": {
+    "queries": [
+      {
+        "domain": "literature",
+        "query": "latent state codeword marginalization phase slip decoder",
+        "query_id": "Q01"
+      },
+      {
+        "domain": "literature",
+        "query": "hidden state sequence decoding codeword marginal likelihood BCJR factor graph",
+        "query_id": "Q02"
+      },
+      {
+        "domain": "literature",
+        "query": "threshold algorithm sorted lists sum threshold top one complete score",
+        "query_id": "Q03"
+      },
+      {
+        "domain": "literature",
+        "query": "code aided cycle slip phase ambiguity candidate rotations decoder evidence",
+        "query_id": "Q04"
+      },
+      {
+        "domain": "literature",
+        "query": "short code list noncoherent complete metric rescoring",
+        "query_id": "Q05"
+      },
+      {
+        "domain": "literature",
+        "query": "GRAND finite state memory correlated channel symbol demodulation",
+        "query_id": "Q06"
+      },
+      {
+        "domain": "literature",
+        "query": "phase equivariant polar code rotational ambiguity",
+        "query_id": "Q07"
+      },
+      {
+        "domain": "patent",
+        "query": "FEC parity check carrier phase estimation parallel rotations",
+        "query_id": "Q08"
+      },
+      {
+        "domain": "patent",
+        "query": "phase slip LDPC coding decoding coherent optical",
+        "query_id": "Q09"
+      },
+      {
+        "domain": "patent",
+        "query": "GRAND higher modulation constellation membership decoder",
+        "query_id": "Q10"
+      },
+      {
+        "domain": "patent",
+        "query": "GRAND architecture universal decoder code membership",
+        "query_id": "Q11"
+      },
+      {
+        "domain": "literature",
+        "query": "adaptive list decoder code validity CRC first valid",
+        "query_id": "Q12"
+      },
+      {
+        "domain": "literature",
+        "query": "group action channel decoding code automorphism constellation rotation",
+        "query_id": "Q13"
+      },
+      {
+        "domain": "literature",
+        "query": "event triggered phase ambiguity decoder model selection",
+        "query_id": "Q14"
+      }
+    ],
+    "schema_version": "1.0"
+  },
+  "scope": {
+    "base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae",
+    "frozen_channel": {
+      "channel": "AWGN after ordinary front-end tracking, plus zero or one persistent residual ±pi/2 phase-state jump",
+      "code_constraint": "binary membership-testable; practical gate restricted to orbit-screened codes with redundancy 16 or 24",
+      "exact_decoder_role": "oracle and approximation benchmark only",
+      "initial_state": "known/anchored",
+      "jump_location": "intra-packet, nonuniform or uniform, tested separately",
+      "modulation": "QPSK with sign labeling; alternative labeling only as an explicit orbit-control variable",
+      "practical_decoder_modes": [
+        "LS-FV first-valid max-witness",
+        "LS-A2 adaptive two-codeword marginal list"
+      ]
+    },
+    "scientific_decision": {
+      "current_exact_certificate_route": "STOP_AS_PRIMARY_PRACTICAL_ROUTE",
+      "field_defining_program": "HOLD_NOT_AUTHORIZED",
+      "foundational_exact_route": "STOP_AS_PRIMARY_NOVELTY_ROUTE",
+      "narrow_approximate_route": "CONTINUE_ONE_BOUNDED_MATCHED_PHYSICAL_GATE",
+      "patent_freedom_to_operate": "NOT_DETERMINED"
+    },
+    "superseded_verdict": "CONTINUE_APPROXIMATE_LATENT_SEARCH_CANDIDATE"
+  },
+  "sources": {
+    "schema_version": "1.0",
+    "search_date": "2026-08-05",
+    "sources": [
+      {
+        "authors": "Ronald Fagin; Amnon Lotem; Moni Naor",
+        "identifier": "DOI 10.1016/S0022-0000(03)00026-6",
+        "novelty_effect": "Strongly anticipates the generic sum-of-queue-heads top-1 stopping architecture in the original exact LS-GRAND theorem.",
+        "primary": true,
+        "source_id": "S01",
+        "technical_relevance": "Threshold Algorithm: sorted access to multiple per-object score lists, random access to complete scores, and stopping when the best complete object score exceeds the monotone aggregate of current list thresholds.",
+        "title": "Optimal Aggregation Algorithms for Middleware",
+        "type": "journal",
+        "url": "https://research.ibm.com/publications/optimal-aggregation-algorithms-for-middleware--1",
+        "year": 2003
+      },
+      {
+        "authors": "L. R. Bahl; J. Cocke; F. Jelinek; J. Raviv",
+        "identifier": "DOI 10.1109/TIT.1974.1055186",
+        "novelty_effect": "Latent-state marginalization is a foundational known principle.",
+        "primary": true,
+        "source_id": "S02",
+        "technical_relevance": "Exact posterior marginalization over hidden Markov states/transitions; linear-code decoding is explicitly a special case.",
+        "title": "Optimal Decoding of Linear Codes for Minimizing Symbol Error Rate",
+        "type": "journal",
+        "url": "https://research.ibm.com/publications/optimal-decoding-of-linear-codes-for-minimizing-symbol-error-rate",
+        "year": 1974
+      },
+      {
+        "authors": "F. R. Kschischang; B. J. Frey; H.-A. Loeliger",
+        "identifier": "DOI 10.1109/18.910572",
+        "novelty_effect": "Many-to-one hidden-state aggregation is not a new generic inference abstraction.",
+        "primary": true,
+        "source_id": "S03",
+        "technical_relevance": "Generic exact or approximate marginal-function computation on factor graphs; forward-backward and decoding are special cases.",
+        "title": "Factor Graphs and the Sum-Product Algorithm",
+        "type": "journal",
+        "url": "https://doi.org/10.1109/18.910572",
+        "year": 2001
+      },
+      {
+        "authors": "Ken R. Duffy; Jiange Li; Muriel Médard",
+        "identifier": "arXiv:1802.07010; IEEE Transactions on Information Theory 2019",
+        "novelty_effect": "The code-agnostic membership-query architecture and first-valid paradigm are established GRAND foundations.",
+        "primary": true,
+        "source_id": "S04",
+        "technical_relevance": "Likelihood-ordered disturbance guessing with arbitrary codebook membership; first valid hit is ML in the one-implied-disturbance additive setting.",
+        "title": "Capacity-achieving Guessing Random Additive Noise Decoding",
+        "type": "journal/preprint",
+        "url": "https://arxiv.org/abs/1802.07010",
+        "year": 2019
+      },
+      {
+        "authors": "Ken R. Duffy; Wei An; Muriel Médard",
+        "identifier": "IEEE Transactions on Signal Processing 2022",
+        "novelty_effect": "Soft reliability ordering and practical first-hit code-agnostic decoding are established.",
+        "primary": true,
+        "source_id": "S05",
+        "technical_relevance": "Reliability-ordered approximate soft GRAND for arbitrary moderate-redundancy codes.",
+        "title": "Ordered Reliability Bits Guessing Random Additive Noise Decoding",
+        "type": "journal",
+        "url": "https://granddecoder.mit.edu/papers",
+        "year": 2022
+      },
+      {
+        "authors": "H. K. Miyamoto; S. Yang",
+        "identifier": "arXiv:2501.12971",
+        "novelty_effect": "Broad claims such as first GRAND for finite-state memory are not defensible.",
+        "primary": true,
+        "source_id": "S06",
+        "technical_relevance": "Noise guessing for unknown finite-state additive channels.",
+        "title": "Universal Decoding over Finite-State Additive Channels via Noise Guessing",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2501.12971",
+        "year": 2025
+      },
+      {
+        "authors": "Zhuang Li; Wenyi Zhang",
+        "identifier": "arXiv:2603.08325",
+        "novelty_effect": "Exact likelihood ordering for non-memoryless channels is already an active GRAND direction.",
+        "primary": true,
+        "source_id": "S07",
+        "technical_relevance": "Exact SGRAND-ISI and practical approximations for a channel with memory.",
+        "title": "GRAND for Gaussian Intersymbol Interference Channels",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2603.08325",
+        "year": 2026
+      },
+      {
+        "authors": "Behrooz Razeghi",
+        "identifier": "arXiv:2607.28363",
+        "novelty_effect": "Conditional state/path enumeration alone is not a sufficient novelty claim.",
+        "primary": true,
+        "source_id": "S08",
+        "technical_relevance": "Trellis/dynamic-programming exact ordering and best-first enumeration for correlated Gaussian noise.",
+        "title": "Low-Pathwidth GRAND: Exact Likelihood-Ordered Enumeration for BPSK Transmission over Correlated Gaussian Noise",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2607.28363",
+        "year": 2026
+      },
+      {
+        "authors": "Mustafa Cemil Coşkun; Gianluigi Liva; Johan Östman; Giuseppe Durisi",
+        "identifier": "arXiv:1901.05409; DOI 10.30420/454862046",
+        "novelty_effect": "List construction followed by channel/state-marginal rescoring is an established workflow.",
+        "primary": true,
+        "source_id": "S09",
+        "technical_relevance": "Constructs a short-code list and applies a complete noncoherent metric to the list for final decision.",
+        "title": "Low-Complexity Joint Channel Estimation and List Decoding of Short Codes",
+        "type": "conference/preprint",
+        "url": "https://arxiv.org/abs/1901.05409",
+        "year": 2019
+      },
+      {
+        "authors": "Shachar Shayovitz; Dan Raphaeli",
+        "identifier": "arXiv:1204.2660",
+        "novelty_effect": "Joint coding/phase-slip inference is not new.",
+        "primary": true,
+        "source_id": "S10",
+        "technical_relevance": "Factor-graph Bayesian inference jointly handles LDPC constraints and strong phase noise, including phase slips.",
+        "title": "Efficient Iterative Decoding of LDPC in the Presence of Strong Phase Noise",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/1204.2660",
+        "year": 2012
+      },
+      {
+        "authors": "Marvin Geiselhart; Marc Gauger; Felix Krieg; Jannis Clausius; Stephan ten Brink",
+        "identifier": "arXiv:2305.01972",
+        "novelty_effect": "Code/constellation symmetry and orbit considerations are established, although the exact algebraic screening used here may remain a useful specialization.",
+        "primary": true,
+        "source_id": "S11",
+        "technical_relevance": "Uses code automorphisms/frozen-bit design to resolve QPSK/QAM phase ambiguities without pilots.",
+        "title": "Phase-Equivariant Polar Coded Modulation",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2305.01972",
+        "year": 2023
+      },
+      {
+        "authors": "Chin-Hung Chen; Ivana Nikoloska; Wim J. van Houtum; Yan Wu; Alex Alvarado",
+        "identifier": "arXiv:2511.21340",
+        "novelty_effect": "Finite phase-candidate generation and decoder-aided model selection/event-triggering are known architectural patterns.",
+        "primary": true,
+        "source_id": "S12",
+        "technical_relevance": "Generates a finite set of PSK-symmetry candidate models and uses decoder evidence to select the most likely model; invoked only when needed.",
+        "title": "Phase-Aware Code-Aided EM Algorithm for Blind Channel Estimation in PSK-Modulated OFDM",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2511.21340",
+        "year": 2025
+      },
+      {
+        "authors": "Bin Li; Hui Shen; David Tse",
+        "identifier": "arXiv:1208.3091; DOI 10.1109/LCOMM.2012.111612.121898",
+        "novelty_effect": "Adaptive list enlargement triggered by code validity is known; novelty must lie in the latent-cause ordering and specific ambiguity rule.",
+        "primary": true,
+        "source_id": "S13",
+        "technical_relevance": "Iteratively increases list size until a code-validity condition passes.",
+        "title": "An Adaptive Successive Cancellation List Decoder for Polar Codes with Cyclic Redundancy Check",
+        "type": "journal/preprint",
+        "url": "https://arxiv.org/abs/1208.3091",
+        "year": 2012
+      },
+      {
+        "authors": "Timo J. Pfau; assignee Alcatel-Lucent",
+        "identifier": "US9166628B2 / US20150171895A1",
+        "novelty_effect": "Very close prior to code-aided selection among phase rotations and orbit-safety concepts; creates material patent-proximity risk.",
+        "primary": true,
+        "source_id": "S14",
+        "technical_relevance": "Applies parallel phase rotations and FEC-code/MLSE evidence to recover absolute carrier phase; exploits the fact that wrong rotations need not map to valid codewords.",
+        "title": "Use of Parity-Check Coding for Carrier-Phase Estimation in an Optical Transport System",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/US9166628B2/en",
+        "year": 2015
+      },
+      {
+        "authors": "European patent family",
+        "identifier": "EP3001571A1 / WO2016045862A1",
+        "novelty_effect": "Phase-slip-aware FEC coding/decoding is established and patented.",
+        "primary": true,
+        "source_id": "S15",
+        "technical_relevance": "Special LDPC coding/decoding constructions for phase-slip channels and persistent bit inversions.",
+        "title": "LDPC Coding and Decoding for Channels with Phase Slip",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/EP3001571A1/en",
+        "year": 2016
+      },
+      {
+        "authors": "Patent family",
+        "identifier": "US20170126328A1",
+        "novelty_effect": "The physical use case and discrete-rotation correction problem are mature prior art.",
+        "primary": true,
+        "source_id": "S16",
+        "technical_relevance": "Addresses coherent-receiver cycle slips caused by constellation rotational symmetry and persistent post-slip errors.",
+        "title": "Cycle Slip Compensation in a Coherent Receiver",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/US20170126328A1/en",
+        "year": 2017
+      },
+      {
+        "authors": "Warren J. Gross; Syed Mohsin Abbas; Thibaud Tonnellier",
+        "identifier": "US11381260B2",
+        "novelty_effect": "Any implementation or hardware claim must account for the existing GRAND IP landscape.",
+        "primary": true,
+        "source_id": "S17",
+        "technical_relevance": "Hardware architecture for candidate error-pattern generation and codebook membership evaluation.",
+        "title": "Architecture for Guessing Random Additive Noise Decoding (GRAND)",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/US11381260B2/en",
+        "year": 2022
+      },
+      {
+        "authors": "Patent family",
+        "identifier": "US11870459B2",
+        "novelty_effect": "Freedom-to-operate cannot be inferred from an academic novelty screen.",
+        "primary": true,
+        "source_id": "S18",
+        "technical_relevance": "Universal GRAND decoder intellectual-property family.",
+        "title": "Universal Guessing Random Additive Noise Decoding (GRAND) Decoder",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/US11870459B2/en",
+        "year": 2024
+      },
+      {
+        "authors": "Patent family",
+        "identifier": "WO2023043343A1",
+        "novelty_effect": "Broad modulation-aware GRAND claims are unsafe.",
+        "primary": true,
+        "source_id": "S19",
+        "technical_relevance": "Extends GRAND-style candidate generation and membership testing to higher-order constellations.",
+        "title": "Guessing Random Additive Noise Decoding for Higher Modulation Constellations",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/WO2023043343A1/en",
+        "year": 2023
+      },
+      {
+        "authors": "GRAND research group",
+        "identifier": "Official publication listing, accessed 2026-08-05",
+        "novelty_effect": "Broad first-of-kind wording must be avoided and patent review is required.",
+        "primary": true,
+        "source_id": "S20",
+        "technical_relevance": "Documents a wide GRAND portfolio including memory, symbol reliability, demodulation, fading, joint detection, correlation, and hardware.",
+        "title": "GRAND Papers",
+        "type": "official_publication_list",
+        "url": "https://granddecoder.mit.edu/papers",
+        "year": 2026
+      },
+      {
+        "authors": "Patent family",
+        "identifier": "US8886058B2 / EP2856669B1",
+        "novelty_effect": "The optical phase-slip anchor is established technology, not itself a novelty.",
+        "primary": true,
+        "source_id": "S21",
+        "technical_relevance": "Parallel carrier-phase estimation and explicit ±90-degree cycle-slip detection/correction in coherent QPSK systems.",
+        "title": "Cycle Slip Reduction in Coherent Optical Communications",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/US8886058B2/en",
+        "year": 2014
+      },
+      {
+        "authors": "Patent family",
+        "identifier": "US5621761A",
+        "novelty_effect": "Rotational code suitability is longstanding prior art.",
+        "primary": true,
+        "source_id": "S22",
+        "technical_relevance": "Coding methods designed to recover from phase ambiguities/rotations without catastrophic FEC behavior.",
+        "title": "Rotationally Invariant Trellis Coding Incorporating Transparent Binary Convolutional Codes",
+        "type": "patent",
+        "url": "https://patents.google.com/patent/US5621761A/en",
+        "year": 1997
+      },
+      {
+        "authors": "Basak Ozaydin; Muriel Médard; Ken R. Duffy",
+        "identifier": "IEEE Journal on Selected Areas in Communications, 2025",
+        "novelty_effect": "Broad claims to be the first GRAND mechanism operating at the modulation interface are unsafe.",
+        "primary": true,
+        "source_id": "S23",
+        "technical_relevance": "Uses GRAND as part of demodulation rather than only a post-demapper bit decoder.",
+        "title": "GRAND-Assisted Demodulation",
+        "type": "official_publication_entry",
+        "url": "https://granddecoder.mit.edu/papers",
+        "year": 2025
+      }
+    ]
+  }
+}

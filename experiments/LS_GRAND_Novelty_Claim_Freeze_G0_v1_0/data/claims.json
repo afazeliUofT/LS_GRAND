@@ -1,0 +1,151 @@
+{
+  "claims": [
+    {
+      "claim": "Exact codeword likelihood is obtained by marginalizing over all latent state trajectories.",
+      "claim_id": "C01",
+      "classification": "ANTICIPATED_CORE_PRINCIPLE",
+      "closest_sources": [
+        "S02",
+        "S03",
+        "S10"
+      ],
+      "disposition": "BLOCK_AS_NOVELTY",
+      "reason": "Hidden-state posterior marginalization is foundational BCJR/sum-product inference and is already used in phase-noise decoding."
+    },
+    {
+      "claim": "Enumerate per-state sorted lists, fully score encountered words, and stop when the best complete score exceeds the sum of current queue heads.",
+      "claim_id": "C02",
+      "classification": "ANTICIPATED_BY_THRESHOLD_ALGORITHM",
+      "closest_sources": [
+        "S01"
+      ],
+      "disposition": "BLOCK_AS_GENERIC_NEW_THEOREM",
+      "reason": "This is a top-1 sum-aggregation threshold algorithm specialization with code membership acting as a feasibility predicate."
+    },
+    {
+      "claim": "Use FEC/code validity to discriminate among candidate constellation rotations or phase hypotheses.",
+      "claim_id": "C03",
+      "classification": "ANTICIPATED_CORE_APPLICATION",
+      "closest_sources": [
+        "S12",
+        "S14",
+        "S15",
+        "S21"
+      ],
+      "disposition": "BLOCK_AS_NOVELTY",
+      "reason": "Code-aided phase-hypothesis discrimination and cycle-slip-aware FEC are established in papers and patents."
+    },
+    {
+      "claim": "Generate a small candidate-codeword list and apply a complete channel/state-marginal metric to choose the final word.",
+      "claim_id": "C04",
+      "classification": "ANTICIPATED_WORKFLOW",
+      "closest_sources": [
+        "S09",
+        "S13"
+      ],
+      "disposition": "BLOCK_AS_STANDALONE_NOVELTY",
+      "reason": "Short-code list construction followed by a complete noncoherent metric and adaptive list sizing are known."
+    },
+    {
+      "claim": "Globally order state-conditioned word components for a sparse persistent automorphism channel and interleave them with arbitrary-code membership queries.",
+      "claim_id": "C05",
+      "classification": "PARTIALLY_ANTICIPATED_COMBINATION",
+      "closest_sources": [
+        "S04",
+        "S06",
+        "S07",
+        "S08",
+        "S19",
+        "S23"
+      ],
+      "disposition": "ALLOW_ONLY_AS_NARROW_COMBINATION",
+      "reason": "All ingredients have close predecessors, but the reviewed sources did not disclose the identical frozen intra-packet automorphism/component-merge construction."
+    },
+    {
+      "claim": "Return the first valid codeword in the globally ordered sparse latent-cause stream as a practical max-witness decoder for one persistent QPSK slip.",
+      "claim_id": "C06",
+      "classification": "NARROW_CANDIDATE_UNRESOLVED",
+      "closest_sources": [
+        "S04",
+        "S12",
+        "S14",
+        "S19",
+        "S20"
+      ],
+      "disposition": "ALLOW_PROVISIONALLY",
+      "reason": "First-valid GRAND and phase-candidate selection are known, but no reviewed source was found with this exact intra-packet sparse-cause/global-component ordering and arbitrary membership interface."
+    },
+    {
+      "claim": "Invoke complete marginal rescoring only for an adaptively bounded two-codeword latent list when an ambiguity trigger rejects first-valid confidence.",
+      "claim_id": "C07",
+      "classification": "NARROW_CANDIDATE_UNRESOLVED",
+      "closest_sources": [
+        "S09",
+        "S12",
+        "S13"
+      ],
+      "disposition": "ALLOW_PROVISIONALLY",
+      "reason": "Adaptive lists and complete rescoring are known separately; novelty can only be claimed for the precise trigger/order/interface combination after further search."
+    },
+    {
+      "claim": "Screen a binary linear code against one-slip QPSK affine transformations using the consistency/rank system H A G^T u = H b.",
+      "claim_id": "C08",
+      "classification": "USEFUL_SPECIALIZATION_NOT_FOUND_AS_IDENTICAL",
+      "closest_sources": [
+        "S11",
+        "S14",
+        "S22"
+      ],
+      "disposition": "ALLOW_AS_SUPPORTING_CONTRIBUTION",
+      "reason": "Phase-equivariant and rotationally robust coding are established, but the exact target-length affine intersection audit was not found identically in the reviewed sources."
+    },
+    {
+      "claim": "Activate the latent-state search only after a tracker alarm, syndrome/CRC failure, or other event detector.",
+      "claim_id": "C09",
+      "classification": "KNOWN_ARCHITECTURAL_PATTERN",
+      "closest_sources": [
+        "S12",
+        "S13",
+        "S21"
+      ],
+      "disposition": "ALLOW_AS_ENGINEERING_CHOICE_NOT_NOVELTY",
+      "reason": "Event-triggered or adaptive invocation is common; it is needed for practical overhead but is not a novelty pillar."
+    },
+    {
+      "claim": "A general field-defining group-action decoder for arbitrary latent transformation channels.",
+      "claim_id": "C10",
+      "classification": "TOO_BROAD_NOT_AUTHORIZED",
+      "closest_sources": [
+        "S02",
+        "S03",
+        "S06",
+        "S07",
+        "S08",
+        "S20"
+      ],
+      "disposition": "BLOCK",
+      "reason": "The current evidence is one synthetic QPSK slip family and does not support a general or field-defining claim."
+    },
+    {
+      "claim": "The current unseen-codeword certificate is both novel and practically efficient exact marginal-ML decoding.",
+      "claim_id": "C11",
+      "classification": "REJECTED_NOVELTY_AND_PRACTICAL_CLAIM",
+      "closest_sources": [
+        "S01"
+      ],
+      "disposition": "BLOCK",
+      "reason": "The generic threshold structure is anticipated and commit ed5a4b4 showed the practical exact-certificate gate failed."
+    },
+    {
+      "claim": "The work is currently a field-defining candidate.",
+      "claim_id": "C12",
+      "classification": "NOT_AUTHORIZED_BY_EVIDENCE",
+      "closest_sources": [
+        "S20"
+      ],
+      "disposition": "BLOCK",
+      "reason": "Formal novelty, optimized matched baselines, structured codes, physical relevance, and implementation-level evidence remain incomplete."
+    }
+  ],
+  "schema_version": "1.0"
+}

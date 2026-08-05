@@ -1,0 +1,102 @@
+{
+  "algorithms": {
+    "oracle": [
+      "exact marginal LS-GRAND on tractable cases"
+    ],
+    "primary": [
+      "LS-FV",
+      "LS-A2 with frozen ambiguity trigger"
+    ],
+    "prohibited_as_primary": [
+      "current exact certificate",
+      "fixed L=4",
+      "fixed L=8"
+    ]
+  },
+  "authorization": "AUTHORIZED_ONLY_AFTER_THIS_CLAIM_FREEZE_IS_REVIEWED",
+  "codes": [
+    {
+      "family": "extended BCH",
+      "targets": [
+        "[64,45,8] or a verified nearby extended BCH configuration",
+        "orbit-screen before use"
+      ]
+    },
+    {
+      "family": "CRC-polar",
+      "targets": [
+        "n=64 and n=128",
+        "total redundancy 16 and 24",
+        "CA-SCL baseline"
+      ]
+    },
+    {
+      "family": "random linear control",
+      "targets": [
+        "[64,48]",
+        "[128,104]"
+      ]
+    }
+  ],
+  "gate_name": "G3P_STRUCTURED_MATCHED_PHYSICAL_PRECURSOR",
+  "mandatory_repairs": [
+    "Use eligible_work_pairs, not all paired_trials, for work-ratio sample thresholds."
+  ],
+  "matched_baselines": [
+    "event-triggered all-state OSD with the identical cached state metric kernel",
+    "C4 forward-backward/BCJR state inference followed by a strong code decoder",
+    "decode-every-state strong code-specific decoder with complete candidate reranking",
+    "ordinary no-slip decoder plus the same trigger",
+    "pilot-assisted and differential alternatives at equal information bits, packet duration, bandwidth, and energy"
+  ],
+  "objective": "Determine whether LS-FV/LS-A2 retains a tail-work or net-overhead advantage against optimized matched receivers on structured codes in a defensible residual-cycle-slip model.",
+  "pass_conditions": [
+    "Across at least two structured code families, LS-FV or LS-A2 has no preregistered material reliability loss versus the strongest matched practical receiver.",
+    "At least one physically defensible region shows approximately 10x or greater p99 normalized-work reduction, or a clear equal-net-rate pilot/energy advantage.",
+    "No-slip p99 overhead remains small under the measured event rate and event trigger.",
+    "Orbit screening removes exact ambiguity without unacceptable redundancy.",
+    "The conclusion survives prior, phase-drift, and one-extra-jump mismatch."
+  ],
+  "physical_anchor": {
+    "must_measure": [
+      "frame slip probability",
+      "jump location distribution",
+      "residual continuous phase error",
+      "tracker detection uncertainty",
+      "pilot/differential overhead"
+    ],
+    "preferred": "coherent optical QPSK residual cycle slips after a conventional carrier-phase estimator",
+    "wireless_alternative": "pilot-limited short burst only after a trace, hardware-emulated process, or defensible standards/oscillator/tracker-derived model is supplied"
+  },
+  "statistics": {
+    "report": [
+      "conditional-on-slip BLER",
+      "unconditional BLER weighted by event rate",
+      "undetected errors",
+      "erasures",
+      "p50/p90/p99 work",
+      "p99 no-slip overhead",
+      "cap/censor rate",
+      "same-platform wall time"
+    ],
+    "separate_metrics": [
+      "latent components",
+      "membership queries",
+      "complete marginal scores",
+      "BCJR state-branch metrics",
+      "OSD reprocessings",
+      "code-decoder executions",
+      "wall time",
+      "energy estimate"
+    ],
+    "stopping": "at least 200 relevant errors per primary point or a preregistered confidence-width rule",
+    "target_bler_region": "10^-3 to 10^-1 for primary matched comparisons"
+  },
+  "stop_conditions": [
+    "Optimized event-triggered BCJR or code-specific state sweep is within roughly 2x in p99 work at equivalent reliability.",
+    "The physical event rate is too small for unconditional benefit after normal-frame overhead.",
+    "Residual continuous phase uncertainty destroys concentration on a small state set.",
+    "The narrowed approximate combination is directly anticipated by a newly found source or blocking patent claim.",
+    "Structured target codes exhibit unavoidable orbit ambiguity."
+  ]
+}

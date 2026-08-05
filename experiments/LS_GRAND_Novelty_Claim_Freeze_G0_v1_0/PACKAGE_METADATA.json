@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-08-05T16:00:00Z",
+  "legal_disclaimer": "Scientific novelty screen only; not patent validity or freedom-to-operate advice.",
+  "network_required_at_runtime": false,
+  "package_name": "LS_GRAND_Novelty_Claim_Freeze_G0_v1_0",
+  "package_version": "1.0.0",
+  "purpose": "formal scientific novelty screen and claim freeze for the narrowed approximate LS-GRAND route",
+  "repository": "afazeliUofT/LS_GRAND",
+  "required_base_commit": "ed5a4b4be5dbabeed98691043dd64db6d0415dae"
+}
