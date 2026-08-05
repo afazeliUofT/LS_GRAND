@@ -1,0 +1,105 @@
+{
+  "channel": {
+    "directions": [
+      1,
+      3
+    ],
+    "frequency_offset_std_deg_per_symbol": 0.03,
+    "initial_phase_std_deg": 1.0,
+    "innovation_phase_std_deg": 0.35
+  },
+  "codes": [
+    {
+      "id": "BCH64_45",
+      "max_interleaver_attempts": 300,
+      "orbit_threshold": 0.001,
+      "snr_db": 8.0,
+      "spec": "extended_bch_64_45",
+      "structured": true
+    },
+    {
+      "id": "POLAR64_48",
+      "max_interleaver_attempts": 300,
+      "orbit_threshold": 0.001,
+      "snr_db": 8.5,
+      "spec": "polar_64_48",
+      "structured": true
+    },
+    {
+      "id": "RANDOM64_48",
+      "max_interleaver_attempts": 150,
+      "orbit_threshold": 0.001,
+      "snr_db": 8.0,
+      "spec": "random_64_48",
+      "structured": false
+    }
+  ],
+  "decoders": {
+    "adaptive_logsumexp_gain_threshold": 0.25,
+    "adaptive_query_cap": 20000,
+    "bch_chase_order": 2,
+    "bch_chase_pool": 6,
+    "bch_chase_state_limit": 8,
+    "conditional_slip_prior_after_alarm": 0.5,
+    "ls_query_cap": 60000,
+    "osd_candidate_cap": 100000,
+    "osd_order": 2,
+    "osd_pool_size": 8,
+    "osd_state_limit_after_alarm": 8,
+    "polar_flip_trials": 4,
+    "run_bch_chase": true,
+    "run_fixed_l2": false,
+    "run_polar_scflip": true,
+    "score_batch_size": 256
+  },
+  "detector": {
+    "calibration_no_slip_frames": 2000,
+    "target_false_alarm_rate": 0.001
+  },
+  "master_seed": 2026080521,
+  "physical_priors": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "profile": "gate",
+  "thresholds": {
+    "bootstrap_resamples": 1200,
+    "max_candidate_bler_excess": 0.03,
+    "max_candidate_bler_upper": 0.25,
+    "max_candidate_cap_rate": 0.05,
+    "max_false_alarm_rate": 0.01,
+    "max_no_slip_median_overhead_ratio": 1.1,
+    "max_no_slip_p99_overhead_ratio": 1.5,
+    "max_orbit_collision_fraction": 0.001,
+    "max_physical_unconditional_bler_excess": 0.001,
+    "min_code_specific_wall_ratio": 2.0,
+    "min_early_detection_rate": 0.8,
+    "min_eligible_work_pairs": 170,
+    "min_p99_wall_ratio": 2.0,
+    "min_paired_slip_trials": 180,
+    "min_physical_tail_wall_ratio": 2.0,
+    "min_uniform_detection_rate": 0.65,
+    "min_wall_ratio": 5.0,
+    "physical_gate_slip_probability": 0.01,
+    "physical_tail_quantile": 0.999
+  },
+  "trials": {
+    "checkpoint_every": 8,
+    "conditions": [
+      "no_slip",
+      "slip_early",
+      "slip_uniform"
+    ],
+    "frames_by_condition": {
+      "no_slip": 500,
+      "slip_early": 100,
+      "slip_uniform": 100
+    },
+    "frames_per_condition": 60,
+    "slip_condition_weights": {
+      "slip_early": 0.5,
+      "slip_uniform": 0.5
+    }
+  }
+}

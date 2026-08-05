@@ -1,0 +1,4 @@
+code_id,base_name,screened_name,family,structured,n,k,rate,redundancy,snr_db,interleaved,interleaver_attempt,orbit_safe,max_collision_fraction,mean_collision_fraction,union_bound,dangerous_transform_count,worst_transform
+BCH64_45,extended_bch_64_45,extended_bch_64_45,extended_bch,True,64,45,0.703125,19,8.0,False,0,True,7.62939453125e-06,9.84438004032258e-07,6.103515625e-05,0,tau14_d1
+POLAR64_48,polar_bec_64_48,polar_bec_64_48_orbit1,polar,True,64,48,0.75,16,8.5,True,1,True,0.000244140625,1.8704322076612904e-05,0.00115966796875,0,tau18_d1
+RANDOM64_48,random_64_48,random_64_48,random_control,False,64,48,0.75,16,8.0,False,0,True,0.0001220703125,1.2305475050403225e-05,0.000762939453125,0,tau18_d1

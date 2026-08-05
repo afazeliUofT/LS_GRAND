@@ -1,0 +1,60 @@
+{
+  "classification": "CONTINUE_TO_FINAL_PHYSICAL_MATCHED_GATE",
+  "event_trigger": {
+    "BCH64_45": {
+      "early_detection_rate": 0.99,
+      "false_alarm_rate": 0.0,
+      "uniform_detection_rate": 0.94
+    },
+    "POLAR64_48": {
+      "early_detection_rate": 0.99,
+      "false_alarm_rate": 0.0,
+      "uniform_detection_rate": 0.95
+    }
+  },
+  "field_defining_authorized": false,
+  "first_valid_vs_code_specific": {
+    "BCH64_45": {
+      "bler_excess_vs_baseline": 0.0,
+      "candidate_bler": 0.005,
+      "eligible_work_pairs": 200,
+      "median_baseline_to_candidate_wall_ratio": 7.0438733218241225,
+      "no_slip_false_alarm_rate": 0.0,
+      "no_slip_median_wall_overhead": 1.0050939966964096,
+      "no_slip_p99_wall_overhead": 1.004399923171931,
+      "p99_baseline_to_candidate_wall_ratio": 4.152665645119847,
+      "paired_slip_trials": 200,
+      "synthetic_p_slip_0p01_p999_wall_seconds": 0.0095219350014303,
+      "synthetic_p_slip_0p01_unconditional_bler": 5.0000000000000016e-05
+    },
+    "POLAR64_48": {
+      "bler_excess_vs_baseline": 0.0,
+      "candidate_bler": 0.01,
+      "eligible_work_pairs": 200,
+      "median_baseline_to_candidate_wall_ratio": 18.13773833473908,
+      "no_slip_false_alarm_rate": 0.0,
+      "no_slip_median_wall_overhead": 1.003518367753257,
+      "no_slip_p99_wall_overhead": 1.0020043046209373,
+      "p99_baseline_to_candidate_wall_ratio": 11.984863469990865,
+      "paired_slip_trials": 200,
+      "synthetic_p_slip_0p01_p999_wall_seconds": 0.025358134000271,
+      "synthetic_p_slip_0p01_unconditional_bler": 0.0001
+    }
+  },
+  "g0_source_commit": "0d2866b091576fe07521172378ded33da79ed545",
+  "internal_preflight_only": true,
+  "limitations": [
+    "Internal container preflight, not the user WSL/GitHub evidence run.",
+    "Synthetic residual-cycle-slip screen, not measured or standard-derived physical validation.",
+    "Interim Chase-BCH and polar SC-Flip state-sweep baselines; final BCJR/iterative, CA-SCL, pilot, and differential comparisons remain mandatory.",
+    "Python wall-clock ratios are implementation-specific and are not hardware or energy claims.",
+    "A positive precursor cannot authorize publication or field-defining language."
+  ],
+  "profile": "gate",
+  "structured_code_orbit_safe": {
+    "BCH64_45": true,
+    "POLAR64_48": true
+  },
+  "unit_tests_passed": 13,
+  "validation_valid": true
+}

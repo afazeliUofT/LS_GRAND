@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-08-05T17:54:33Z",
+  "default_profile": "gate",
+  "field_defining_verdict_authorized": false,
+  "g0_chain_status": "PASS_NARROWED_APPROXIMATE_CLAIM_FREEZE at commit 0d2866b; broad exact novelty and practical certificate routes remain stopped",
+  "gate_name": "G3P_STRUCTURED_MATCHED_PHYSICAL_PRECURSOR",
+  "internal_full_profile_preflight": "Expected only to decide whether a final physical/matched gate is justified; never authorizes publication or field-defining language",
+  "package_name": "LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0",
+  "physical_gate_status": "Precursor only: synthetic residual phase/cycle-slip screen; measured or standard-derived validation remains mandatory",
+  "required_base_commit": "0d2866b091576fe07521172378ded33da79ed545",
+  "required_repository": "afazeliUofT/LS_GRAND",
+  "scientific_scope": "Event-triggered LS-FV and adaptive LS-A2 on orbit-screened structured short codes under a frozen synthetic residual-cycle-slip model",
+  "version": "1.0.0"
+}

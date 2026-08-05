@@ -29,3 +29,13 @@ dist/
 experiments/LS_GRAND_Novelty_Claim_Freeze_G0_v1_0/.installed_package_sha256
 experiments/LS_GRAND_Novelty_Claim_Freeze_G0_v1_0.previous_*/
 experiments/.extract_LS_GRAND_Novelty_Claim_Freeze_G0_v1_0_*/
+# LS-GRAND G3P precursor local execution
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+experiments/LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0/.installed_package_sha256
+experiments/LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0.previous_*/
+experiments/.extract_LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0_*/

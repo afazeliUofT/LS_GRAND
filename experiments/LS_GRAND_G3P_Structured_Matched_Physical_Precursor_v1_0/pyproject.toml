@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lsgrand-g3p-precursor"
+version = "1.0.0"
+description = "G3P structured-code matched precursor for approximate LS-GRAND"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "scipy>=1.10,<2",
+  "pandas>=2.0,<3",
+  "matplotlib>=3.7,<4"
+]
+
+[project.scripts]
+lsgrand-g3p = "lsgrand_focused.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

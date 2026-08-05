@@ -1,0 +1,122 @@
+{
+  "FINAL_G3P_REPORT.md": {
+    "bytes": 2357,
+    "sha256": "a0dd3e469801d3cf46f9f9b5b5ab86b56bac93d86e5eb08f4abc6d95f621982c"
+  },
+  "FINAL_G3P_VERDICT.json": {
+    "bytes": 13454,
+    "sha256": "e06771f4d67c749a3772814a25d5adc18aa79b058821b572aad0ffc456cd02f0"
+  },
+  "FROZEN_CONFIG.json": {
+    "bytes": 2605,
+    "sha256": "f9d63a3269b0ce16e1e8d855deaa48d8ea734df075b26f66fd2764f07e81ef6a"
+  },
+  "G0_CHAIN_LOCK.json": {
+    "bytes": 799,
+    "sha256": "ef7599a819afe119695b5caace457538afe7dcdd074db0843156d2d9a89dc5af"
+  },
+  "G0_CLAIM_MATRIX_FROZEN.csv": {
+    "bytes": 3745,
+    "sha256": "0282200d379f71d42b5af72763a8ec3a4b035a6921204e742eb1a7a7d563e922"
+  },
+  "REPRODUCIBILITY_MANIFEST.json": {
+    "bytes": 3469,
+    "sha256": "58728896ab003aaeef9218c6497f4d818ef4021f9d5db39cf24d7f84d48a2d3d"
+  },
+  "RUN_STATE.json": {
+    "bytes": 122,
+    "sha256": "f2aab5477bcfca8c829df8bdb9b782dcdf0cd6b15307c6f62e396ce69de5e304"
+  },
+  "UNIT_TEST_LOG.txt": {
+    "bytes": 1374,
+    "sha256": "aa37c38bade73750123075a03574888287990e8f3f9b62900b1d975eab9693a2"
+  },
+  "WRAPPER_EXECUTION_MANIFEST.json": {
+    "bytes": 747,
+    "sha256": "875ddcbe4f51b087d79b68d29b6813a53d5925296e9eb580dafc84004cba4e91"
+  },
+  "WRAPPER_LOG_THROUGH_CAMPAIGN.txt": {
+    "bytes": 7844,
+    "sha256": "39d8dc72ed85b45995f3f455746f459d139dd2dd2f75cb51c06fd429d0e84fa8"
+  },
+  "WRAPPER_LOG_THROUGH_VALIDATION.txt": {
+    "bytes": 8420,
+    "sha256": "92074d0e70a5a0025fdef2fe06ca9326de77915677452226eddc3b09e2e21dd8"
+  },
+  "code_orbit_summary.csv": {
+    "bytes": 702,
+    "sha256": "ff888dd155d5bec23fe9b19b33c755e5a85557390038d9a0f531baf901da8a03"
+  },
+  "code_orbit_transforms.csv": {
+    "bytes": 6784,
+    "sha256": "e829cdaa59c2d088a1edb756b6b6769bc8ade37b967161d77e170a3aca993e8b"
+  },
+  "codes/BCH64_45.npz": {
+    "bytes": 1389,
+    "sha256": "5da3212147fb0d6ebe7d75dc6718df7b38a659ed069762439454a101e40d0c6e"
+  },
+  "codes/POLAR64_48.npz": {
+    "bytes": 1711,
+    "sha256": "8861fa1e090dc242f83f273bfbcae4447f1d6ba051a94c5e970288a82402175e"
+  },
+  "codes/RANDOM64_48.npz": {
+    "bytes": 1587,
+    "sha256": "98edef6aa47c6e7d825f38fc2d9ce03e139a441f975fa615a2ca6fb823ba78b6"
+  },
+  "detector_calibration.csv": {
+    "bytes": 382375,
+    "sha256": "d32c5cf2804077603bfacfdd22e91672749d1a3f6374d633059e0e63e900443b"
+  },
+  "detector_summary.csv": {
+    "bytes": 238,
+    "sha256": "98df37a698474d9a74268eba288aea043a920ba21098ca2513ab1b6d676f2ab9"
+  },
+  "detector_thresholds.json": {
+    "bytes": 110,
+    "sha256": "bde0b61287689b31b1c3887e1b902fc56db2f0a476cfde1d53216fd86ff3eeb9"
+  },
+  "figures/event_trigger.png": {
+    "bytes": 37278,
+    "sha256": "1a511eb940fee0f048d66dd9634bb79c256f32378f5d4a432ea11c4dedf5128f"
+  },
+  "figures/no_slip_overhead.png": {
+    "bytes": 78123,
+    "sha256": "0821abc94fb4a54ab70b0e98af006becbb75936a89f01a97c11f139d8e6b9427"
+  },
+  "figures/orbit_screen.png": {
+    "bytes": 46529,
+    "sha256": "6996fcc482589723dd1c16c9557fbc59cae528a2afaedc7eea4fef9732047d3a"
+  },
+  "figures/physical_mixture_p99.png": {
+    "bytes": 111481,
+    "sha256": "251b3b678812862b5408bfe0a61b16c1f2ca245d00ad550e09eb429a1f1b8eee"
+  },
+  "figures/structured_frontier.png": {
+    "bytes": 64338,
+    "sha256": "46178c1f03eada1d0fddb93317582f98e4261b54dcf3d4f5372ebecae967eb3e"
+  },
+  "gate_status.csv": {
+    "bytes": 9385,
+    "sha256": "d5e1254f46b2400935f42cca813fe29ef9887b128c721b97e32b73826d44bf6d"
+  },
+  "no_slip_overhead.csv": {
+    "bytes": 998,
+    "sha256": "aff6a4942b7ea214fcd848179ffa6289c551b84226423976e4802a621d10674c"
+  },
+  "performance_aggregate.csv": {
+    "bytes": 23314,
+    "sha256": "58e3abebbe5edc474cf096d4bc2ddafb03b30dd561aa07fd1e69e51835c11dc5"
+  },
+  "performance_comparisons.csv": {
+    "bytes": 4058,
+    "sha256": "6ab467c91dedf93f027db0b089c3c8fb211514c7d7c05d162afe2dca81ffe1b8"
+  },
+  "performance_trials.csv": {
+    "bytes": 2846288,
+    "sha256": "f920e6451810ff04c1e0e6b81519fa93a0bd8aea82bfb050d31ee278cf6c0e4e"
+  },
+  "physical_mixture.csv": {
+    "bytes": 6178,
+    "sha256": "7e231b7ae8702d3e5fb12ec550e5ba2b74962326f317de527d6e0fb99deadc1c"
+  }
+}

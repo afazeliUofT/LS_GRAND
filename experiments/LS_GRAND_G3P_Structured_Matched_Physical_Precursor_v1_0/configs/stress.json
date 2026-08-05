@@ -1,0 +1,108 @@
+{
+  "profile": "stress",
+  "master_seed": 2026080523,
+  "codes": [
+    {
+      "id": "BCH64_45",
+      "spec": "extended_bch_64_45",
+      "structured": true,
+      "snr_db": 8.0,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 1000
+    },
+    {
+      "id": "POLAR64_48",
+      "spec": "polar_64_48",
+      "structured": true,
+      "snr_db": 8.5,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 1000
+    },
+    {
+      "id": "RANDOM64_48",
+      "spec": "random_64_48",
+      "structured": false,
+      "snr_db": 8.0,
+      "orbit_threshold": 0.001,
+      "max_interleaver_attempts": 500
+    }
+  ],
+  "channel": {
+    "directions": [
+      1,
+      3
+    ],
+    "initial_phase_std_deg": 1.5,
+    "innovation_phase_std_deg": 0.5,
+    "frequency_offset_std_deg_per_symbol": 0.05
+  },
+  "detector": {
+    "calibration_no_slip_frames": 5000,
+    "target_false_alarm_rate": 0.0005
+  },
+  "decoders": {
+    "conditional_slip_prior_after_alarm": 0.5,
+    "ls_query_cap": 120000,
+    "run_fixed_l2": false,
+    "osd_order": 2,
+    "osd_pool_size": 12,
+    "osd_candidate_cap": 200000,
+    "score_batch_size": 512,
+    "run_bch_chase": true,
+    "bch_chase_order": 2,
+    "bch_chase_pool": 8,
+    "adaptive_logsumexp_gain_threshold": 0.2,
+    "adaptive_query_cap": 40000,
+    "osd_state_limit_after_alarm": 16,
+    "bch_chase_state_limit": 16,
+    "run_polar_scflip": true,
+    "polar_flip_trials": 8
+  },
+  "trials": {
+    "conditions": [
+      "no_slip",
+      "slip_early",
+      "slip_uniform",
+      "slip_late"
+    ],
+    "frames_per_condition": 300,
+    "checkpoint_every": 10,
+    "slip_condition_weights": {
+      "slip_early": 0.25,
+      "slip_uniform": 0.5,
+      "slip_late": 0.25
+    },
+    "frames_by_condition": {
+      "no_slip": 1500,
+      "slip_early": 400,
+      "slip_uniform": 600,
+      "slip_late": 400
+    }
+  },
+  "physical_priors": [
+    0.0001,
+    0.001,
+    0.01
+  ],
+  "thresholds": {
+    "bootstrap_resamples": 4000,
+    "max_orbit_collision_fraction": 0.001,
+    "max_false_alarm_rate": 0.005,
+    "min_early_detection_rate": 0.85,
+    "min_uniform_detection_rate": 0.7,
+    "min_paired_slip_trials": 1300,
+    "min_eligible_work_pairs": 1200,
+    "max_candidate_bler_upper": 0.15,
+    "max_candidate_bler_excess": 0.015,
+    "max_candidate_cap_rate": 0.02,
+    "min_wall_ratio": 10.0,
+    "min_p99_wall_ratio": 5.0,
+    "min_code_specific_wall_ratio": 3.0,
+    "max_no_slip_median_overhead_ratio": 1.05,
+    "max_no_slip_p99_overhead_ratio": 1.5,
+    "physical_gate_slip_probability": 0.01,
+    "max_physical_unconditional_bler_excess": 0.0005,
+    "physical_tail_quantile": 0.999,
+    "min_physical_tail_wall_ratio": 5.0
+  }
+}

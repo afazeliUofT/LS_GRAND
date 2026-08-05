@@ -1,0 +1,13 @@
+{
+  "completed_utc": "20260805T192025Z",
+  "git_head_before_commit": "0d2866b091576fe07521172378ded33da79ed545",
+  "package_filename": "LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0.zip",
+  "package_sha256": "9a645338d05b985e4ebc4c027f00a936b4107f914d02d2ad851333a36b5c06af",
+  "package_source": "/mnt/c/Users/alifa/Downloads/LS_GRAND_G3P_Structured_Matched_Physical_Precursor_v1_0.zip",
+  "profile": "gate",
+  "repository": "afazeliUofT/LS_GRAND",
+  "required_base_commit": "0d2866b091576fe07521172378ded33da79ed545",
+  "run_name": "LS_GRAND_G3P_Structured_Matched_Physical_Precursor_gate_20260805T191352Z",
+  "unit_test_log_source": "results/_wrapper_logs/g3p_precursor_unit_tests_20260805T191352Z.log",
+  "wrapper_version": "1.0.0"
+}

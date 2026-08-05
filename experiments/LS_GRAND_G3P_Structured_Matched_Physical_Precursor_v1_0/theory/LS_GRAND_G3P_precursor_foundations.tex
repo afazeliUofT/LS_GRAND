@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,geometry,booktabs}
+\geometry{margin=1in}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\title{Focused Foundations for Event-Triggered Latent-State Guessing}
+\author{}
+\date{August 2026}
+\begin{document}
+\maketitle
+
+\section{Frozen practical problem}
+Let $\mathcal C\subseteq\{0,1\}^n$ be a binary code with a membership test.
+A QPSK packet is observed after coarse carrier recovery.  The normal model has
+no residual discrete rotation.  An exceptional frame may contain one persistent
+$\pm\pi/2$ rotation beginning at an unknown symbol.  Small residual continuous
+phase and frequency errors are treated as model mismatch, not as extra discrete
+states.
+
+The v1.1 evidence supports a low-description-cause search but does not support
+using the current exact unseen-codeword certificate as an efficient practical
+receiver.  The frozen practical decoder is therefore approximate and
+explicitly event triggered.
+
+\section{Globally ordered latent components}
+Let $s\in\mathcal S$ denote no slip or one admissible slip trajectory, with
+conditional post-alarm prior $\pi_s$.  For fixed $s$, candidate words are emitted
+in non-increasing order of
+\begin{equation}
+ q_s(x;y)=\pi_s p(y\mid x,s).
+\end{equation}
+A global heap merges the state-conditioned queues.  The first emitted word in
+$\mathcal C$ is the max-component or first-valid decision
+\begin{equation}
+ \widehat c_{\rm FV}=\arg\max_{c\in\mathcal C,s\in\mathcal S}q_s(c;y).
+\end{equation}
+This is not generally marginal ML.
+
+For a bounded list $\mathcal L$ of distinct valid words encountered in the same
+ordering, complete marginal rescoring uses
+\begin{equation}
+ \Lambda(c;y)=\sum_{s\in\mathcal S}q_s(c;y),\qquad c\in\mathcal L.
+\end{equation}
+The $L=2$ receiver is approximate because unseen codewords are not certified
+away.
+
+\section{Adaptive two-candidate trigger}
+Let $(c_1,s_1)$ be the first valid component.  Define
+\begin{equation}
+ \Delta_{\rm path}(c_1)
+ =\log\Lambda(c_1;y)-\log q_{s_1}(c_1;y).
+\end{equation}
+Since the first occurrence of $c_1$ is its largest state component,
+$\exp(\Delta_{\rm path})$ is an effective path multiplicity for $c_1$.
+When $\Delta_{\rm path}$ is below a frozen threshold, the receiver accepts
+$c_1$.  Otherwise it continues until a second distinct valid word is found and
+returns the better of the two complete marginal scores.  This trigger is a
+pre-registered heuristic; no exactness claim is made.
+
+\section{Event architecture}
+The normal code-specific decoder first returns $\widehat c_0$.  The residual
+alarm statistic is
+\begin{equation}
+ T(y,\widehat c_0)=\frac{1}{mN_0}
+ \sum_{t=1}^{m}\left|y_t-\mu(\widehat c_{0,t})\right|^2.
+\end{equation}
+Its threshold is calibrated on independent no-slip frames to a frozen target
+false-alarm probability.  If no alarm occurs, $\widehat c_0$ is accepted.  If an
+alarm occurs, latent recovery or the matched state-aware baseline is invoked.
+The detector cost is charged only to event architectures, not hidden inside the
+ordinary normal-decoder baseline.
+
+\section{Affine orbit screening}
+Every QPSK suffix rotation induces an affine binary map
+\begin{equation}
+ T(x)=Ax\oplus b.
+\end{equation}
+For a linear code with generator $G$ and parity-check matrix $H$, write
+$x=G^Tu$.  The condition $T(x)\in\mathcal C$ is equivalent to
+\begin{equation}
+ HAG^Tu=Hb.
+\end{equation}
+\begin{proposition}[Exact collision fraction]
+If the above GF$(2)$ system is inconsistent, no codeword maps into the code
+under $T$.  If it is consistent and has rank $r_T$, the fraction of codewords
+whose transformed image is again a codeword is $2^{-r_T}$.
+\end{proposition}
+\begin{proof}
+A consistent rank-$r_T$ system in $k$ message variables has
+$2^{k-r_T}$ solutions.  Dividing by $|\mathcal C|=2^k$ gives $2^{-r_T}$.
+\end{proof}
+
+A coordinate interleaver is accepted only when every frozen one-slip transform
+meets the pre-registered collision threshold.  This is a safety restriction,
+not a claim that arbitrary codes are automatically identifiable.
+
+\section{Decision discipline}
+A continued practical route requires all of the following on both frozen
+structured codes: orbit safety, acceptable trigger false-alarm and detection
+rates, compatible BLER against the matched state-aware baselines, sufficient
+eligible uncensored pairs, a wall-time advantage, and negligible normal-frame
+overhead.  A synthetic rare-event mixture may justify acquisition of a real
+trace; it cannot itself pass a physical-use-case gate.
+
+\begin{remark}
+The exact finite-state marginal decoder remains a useful oracle and theorem.
+The present package does not test or claim practical efficiency of its current
+stopping bound.
+\end{remark}
+
+\end{document}
